@@ -32,68 +32,57 @@
 
 
 # 방법 3(with문)
-with open("new.txt", "w", encoding = 'utf-8') as f:
-    for i in range(10):
-        data = f'{i}번째 줄입니다. \n' 
-        f.write(data)
+# with open("new.txt", "w", encoding = 'utf-8') as f:
+#     for i in range(1, 16):
+#         data = f'{i}번째 줄입니다. \n' 
+#         f.write(data)
 
-# menu 고르기
-menu = ["카레\n", "짜장\n", "탕수육\n"]
-m =  open("menu.txt", "w", encoding = 'utf-8')
-m.writelines(menu)
-m.close()
+# # menu 고르기
+# menu = ["카레\n", "짜장\n", "탕수육\n"]
+# m =  open("menu.txt", "w", encoding = 'utf-8')
+# m.writelines(menu)
+# m.close()
 
-# menu 고르기 2(with문)
-menu = ["카레\n", "짜장\n", "탕수육\n"]
-with open("menu.txt", "w", encoding = 'utf-8') as f:
-	f.writelines(menu)
-
-
+# # menu 고르기 2(with문)
+# menu = ["카레\n", "짜장\n", "탕수육\n"]
+# with open("menu.txt", "w", encoding = 'utf-8') as f:
+# 	f.writelines(menu)
 
 
 
+# f = open("line.txt","w", encoding = 'utf-8')
+# numbers = [1, 2, 3, 4, 5]
+# for i in numbers:
+#     words = f'{i}번째입니다.\t'
+#     f.write(words)
+# f.close()
+
+# f = open("line.txt","w", encoding = 'utf-8')
+# numbers = [1, 2, 3, 4, 5]
+# for i in numbers:
+#     words = f'{i}번째입니다.\t'
+#     f.write(words)
+# f.close()
+
+# with open("ssafy.txt", "w", encoding = 'utf-8') as f:
+#     for i in range(5):
+#         data = f'{i}번째 단어\t'
+#         f.write(data)
+
+# with open("ssafy.txt", "w", encoding = 'utf-8') as f:
+#     for i in range(1, 11):
+#         data = f'{i}번째 줄입니다. \n'
+#         f.write(data)
 
 
+# with open("new.txt", "r", encoding = 'utf-8') as f:
+#     line = f.readline()
+#     print(line.strip())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-f = open("line.txt","w", encoding = 'utf-8')
-numbers = [1, 2, 3, 4, 5]
-for i in numbers:
-    words = f'{i}번째입니다.\t'
-    f.write(words)
-f.close()
-
-
-
-with open("ssafy.txt", "w", encoding = 'utf-8') as f:
-    for i in range(5):
-        data = f'{i}번째 단어\t'
-        f.write(data)
-
-
-
+with open("new.txt", "r", encoding = 'utf-8') as f:
+    lines = f.readlines()
+    for line in lines:
+        print(line.strip())
 
 
 
