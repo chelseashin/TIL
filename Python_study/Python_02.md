@@ -33,6 +33,14 @@ print('안녕하세요. {1}입니다. My name is {1}.'. format(name, e_name))
 print(f'안녕하세요. {name}입니다. My name is {e_name}.')
 ```
 
+```python
+# 어렵다면 이렇게!
+name = "신채원"
+print("안녕하세요." + name + "입니다." )
+```
+
+
+
 > lotto quiz
 
 ```python
@@ -46,8 +54,6 @@ print(lotto)
 lotto = random.sample(num, k = 6)
 lotto.sort()
 print(lotto)
-name = "신채원"
-print("안녕하세요." + name + "입니다." )
 ```
 
 > lotto quiz 2
