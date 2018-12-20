@@ -88,14 +88,14 @@ Q2
 # }
 
 
-# # print(ssafy)
+# print(ssafy)
 
-# # ssafy의 semester1의 기간을 출력하세요.
-# # dict = ["key" : value]
-# print(ssafy["duration"]["semester1"])
+# ssafy의 semester1의 기간을 출력하세요.
+# dict = ["key" : value]
+print(ssafy["duration"]["semester1"])
 
-# # ssafy의 dictionary 안에 들어있는 '대전'을 출력하세요
-# print(ssafy["location"][1])
+# ssafy의 dictionary 안에 들어있는 '대전'을 출력하세요
+print(ssafy["location"][1])
 
-# # daejeon의 매니저의 이름을 출력하세요
-# print(ssafy["classes"]["daejeon"]["manager"])
+# daejeon의 매니저의 이름을 출력하세요
+print(ssafy["classes"]["daejeon"]["manager"])

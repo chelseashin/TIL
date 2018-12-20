@@ -26,7 +26,7 @@ for i in item :
 print(i+1)
 
 # 방법 2
-item = int(input("번호를 입력하세요 : "))
+item = int(input("번호를 입력하세요 : "))03
 for i in range(1, item + 1):
     print(i)
 ```
