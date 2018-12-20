@@ -1,6 +1,6 @@
-## Python_03
+## Python_04
 
-date : 2018-12-18
+date : 2018-12-20
 
 author : chaewonshin
 
@@ -129,7 +129,7 @@ print(dict.values())
           if min(temp) < cold:
               cold = min(temp)
               cold_city = name
-          # 최고 온도가 hot 보다 더 더우면, hot  에 넣고
+          # 최고 온도가 hot 보다 더 더우면, hot  에 넣는다.
           if max(temp) > hot:
               hot = max(temp)
               hot_city = name
