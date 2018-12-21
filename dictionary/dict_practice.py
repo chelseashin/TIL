@@ -111,11 +111,11 @@ for name, temp in cities.items():
         hot_city = name
         cold_city = name
     else:
-        # 최저 온도가  cold 보다 더 추우면, cold  에 넣고
+        # 최저 온도가  cold 보다 더 추우면, cold에 넣고
         if min(temp) < cold:
             cold = min(temp)
             cold_city = name
-        # 최고 온도가 hot 보다 더 더우면, hot  에 넣고
+        # 최고 온도가 hot 보다 더 더우면, hot에 넣고
         if max(temp) > hot:
             hot = max(temp)
             hot_city = name
