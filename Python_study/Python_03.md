@@ -4,9 +4,29 @@ date : 2018-12-19
 
 author : chaewonshin
 
-title : 제어문/html
+title : 제어문/html,css
 
 ----
+
+> - 아래 코드의 출력 결과를 예상하라
+>
+>   ```python
+>   if True:
+>       if False:
+>           print("1")
+>           print("2")
+>       else:
+>           print("3")
+>   else:
+>       print("4")
+>   print("5")
+>   
+>   
+>   # 정답
+>   3
+>   5
+>   # if - else 구문을 만나면 조건에 충족(True)하는 하나의 구역만 실행한다는 사실 유의!
+>   ```
 
 
 
@@ -19,15 +39,17 @@ title : 제어문/html
 Q1
 # 자연수 n이 주어졌을 때, 1부터  N까지 한 줄에 하나씩 출력하는 프로그램을 작성하시오
 '''
+# input() : 사용자의 입력 값을 받는다.
 
-# 방법 1
-item = int(input("번호를 입력하세요 : "))
-for i in item : 
-print(i+1)
-
-# 방법 2
-item = int(input("번호를 입력하세요 : "))
-for i in range(1, item + 1):
+# A 1
+n = int(input('숫자를 입력하세요: '))
+for i in range(n):
+    print(i+1)
+    
+    
+# A 2
+n = int(input('숫자를 입력하세요: '))
+for i in range(1,n+1):
     print(i)
 ```
 
@@ -41,17 +63,25 @@ Q2
 "투자경고 종목이 아닙니다"를 출력하는 프로그램을 작성하라
 '''
 
-warn.investment_list = ["microsoft", "google", "naver", "kakao", "samsung", "lg"]
-print(f"경고 종목 리스트 : {warn_investment_list}")
-item = input("투자종목이 무엇입니까? : ")
+warn_investment_list = ["microsoft", "google", "naver", "kakao", "samsung", "lg"]
+print(f"경고 종목 리스트: {warn_investment_list}")
+item = input('투자종목이 무엇입니까?: ')
 
- if item.lower() in warn.investment_list:
-      print("투자 경고 종목입니다.")
-   else :
-      print("투자 경고 종목이 아닙니다.")
+# A 1
+if item in warn_investment_list:
+    print("투자 경고 종목입니다")
+else:
+    print("투자 경고 종목이 아닙니다")
+
+# A 2
+if item.lower() in warn_investment_list:
+    print("WARNING!")
+else:
+    print("SAFE")
 
 # .lower() : 입력값에 대문자가 들어와도 소문자로 바꿔주는 것.
 # if - not in 일 때는 논리구조가 반대로 된다.
+# if x in y : x 가 in 에 포함되어 있는지 판단. (있다면 True) <-> if x not in y
 
 ```
 
@@ -60,26 +90,40 @@ item = input("투자종목이 무엇입니까? : ")
 ```python
 '''
 Q2
-# 다음 리스트에서 0, 4, 5번째 항목을 제외한 리스트를 출력하시오
+# 다음 리스트에서 0, 4, 5번째 항목을 제외한 새로운 리스트를 생성하시오
 '''
-# 방법 1
-colors = ["apple", "banana", "cocont", "deli", "ele", "grape"]
-fruit = []
+
+# 튜플(tuple)
+# 리스트는 [ 과 ]으로 둘러싸지만 튜플은 ( 과 ) 으로 둘러싼다.
+# 리스트는 그 값의 생성, 삭제, 수정이 가능하지만 튜플은 그 값을 바꿀 수 없다.
+
+colors = ['Apple', 'Banana', 'Coconut', 'Deli', 'Ele', 'Grape']
+
+# A1
 deleteindex = [0, 4, 5]
+fruit = []
 
 for i in range(0, len(colors)):
     if i not in deleteindex:
         fruit.append(colors[i])
 print(fruit)
 
-# 방법 2
-colors = ["apple", "banana", "cocont", "deli", "ele", "grape"]
+
+# A2
 fruit = []
-for i in range(0, len(colors)):
-    if i not in [0, 4, 5]
-      pass
-    else :
-       fruit.append(colors[i])
+
+for color in colors:
+    if colors.index(color) not in (0, 4, 5):
+        fruit.append(color)
+print(fruit)
+
+
+# A3
+fruit = []
+
+for a in colors:
+    if a not in colors[0] and a not in colors[4] and a not in colors[5]:
+        fruit.append(a)
 print(fruit)
 ```
 

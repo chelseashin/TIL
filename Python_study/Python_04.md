@@ -56,7 +56,7 @@ print(dict.values())
   total_score = 0
   for score in score.values():
       total_score = total_score + score
-      total_score += score (위와 같음!)
+  #   total_score += score (위와 같음!)
   average_score = total_score /len(score.values())
   print(average_score)
   ```

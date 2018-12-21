@@ -1,6 +1,6 @@
 ## Python_05
 
-date : 2018-12-20
+date : 2018-12-21
 
 author : chaewonshin
 
@@ -120,12 +120,14 @@ while True:
   url = f"https://api.telegram.org/bot{token}/{method_name}"
   # chat_id = 540753224
   
+  # json파일에서 내 id 가져오기
   update = requests.get(url).json()
   # print(update)
   chat_id = update["result"][0]["message"]["chat"]["id"]
   print(chat_id)
   
   # msg = "안녕하세요~"
+  # 메세지로 네이버 코스피를 가져와 메세지로 보내기
   naver = "https://finance.naver.com/sise/"
   req = requests.get(naver).text
   soup = BeautifulSoup(req, 'html.parser')
