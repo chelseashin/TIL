@@ -4,9 +4,32 @@ date : 2018-12-19
 
 author : chaewonshin
 
-title : 제어문/html,css
+title : 제어문/html,css/flask/github
 
 ----
+
+INDEX
+
+1. 파이썬 문제풀이 (제어문 모음)
+2. html/css 기초
+3. flask
+   - c9 가입 및 환경설정
+   - 플라스크 서버 실행
+   - 라우팅 설정
+   - html 랜더링
+   - variable routing
+   - menu 랜덤출력
+4. github 페이지
+   - icon 바꿔보기 (font-awesome)
+   - 색감, 이미지 변경 등등
+
+----
+
+
+
+#### 1. Python  제어문 문제풀이
+
+
 
 > - 아래 코드의 출력 결과를 예상하라
 >
@@ -177,7 +200,7 @@ print(ssafy["classes"]["daejeon"]["manager"])
 
 
 
-### html 
+### 2. html/css 기초 
 
 * page 만들기
 
@@ -280,3 +303,135 @@ p ~ span{
 }
 ```
 
+
+
+## 3. flask
+
+> 가입 환경 및 설정: c9 초기세팅문서 참고
+
+------
+
+### 라우팅 설정
+
+- `hello.py`
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "안녕하세요!!!"
+
+@app.route("/hello")
+def hello():
+    return "반가워ㅎㅎㅎㅎ"
+```
+
+### HTML rendering
+
+> render 할 html 파일들은 **반드시 templates 폴더 안에 있어야 한다.**
+
+```pythn
+from flask import Flask
+app = Flask(__name__)
+
+...
+    
+@app.route("/html_tag")
+def html_tag():
+    return "<h1>안녕하셔요!!!</h1>"
+    
+@app.route("/html_line")
+def html_line():
+    return """
+    <h1>여러줄 보내기</h1>
+    <ul>
+        <li>1번</li>
+        <li>2번</li>
+    </ul>
+    """
+```
+
+- index.html 랜더링
+
+```python
+from flask import Flask, render_template
+
+...
+
+@app.route("/html_render")
+def html_render():
+    return render_template("index.html")
+```
+
+### Variable routing
+
+#### 이름 받아서 출력
+
+```python
+@app.route("/html_name/<string:name>")
+def html_name(name):
+    return render_template("hello.html", your_name = name)
+```
+
+- `hello.html`
+
+```python
+<h1>안녕하세요!, {{ your_name }}</h1>
+```
+
+#### 정수 받아서 계산
+
+```python
+@app.route("/math/<int:num>")
+def math(num):
+    result = num**3
+    return render_template("math.html", num = num, result = result)
+```
+
+- `math.html`
+
+```python
+<h1>{{ num }} 의 세제곱 값은</h1>
+<h2>{{ result }} 입니다.</h2>
+```
+
+#### 저녁 메뉴 랜덤 뽑기
+
+```python
+from flask import Flask, render_template
+import random
+app = Flask(__name__)
+
+...
+
+@app.route("/dinner")
+def dinner():
+    list = ["초밥", "탕수육", "삼겹살", "돼지국밥"]
+    dict = {
+        "초밥": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfF9i7jCNsrSQiCYuzla9I8xxy2owFfgPYtiKyJ7mbPNEbLMZp",
+        "탕수육": "https://i1.wp.com/starkaraokeuiuc.net/wp-content/uploads/2017/09/K-11.jpg?fit=639%2C409",
+        "삼겹살": "https://cdn.shopify.com/s/files/1/1071/7482/products/tip_4d8d7385-041d-4042-9291-b0b3e7a5945c.jpg?v=1481208412",
+        "돼지국밥": "https://dispatch.cdnser.be/wp-content/uploads/2018/11/20181121002235_d426e3e2cc9c45b124f83033e2fb0580.jpg"
+    }
+    pick = random.choice(list)
+    url = dict[pick]
+    return render_template("dinner.html", pick=pick, url=url)
+```
+
+- `dinner.html`
+
+```python
+<h1>오늘의 저녁은 {{ pick }}</h1>
+<img src="{{url}}" alt="{{pick}}사진" height="300" width="400">
+```
+
+------
+
+### GibHub
+
+[fontawesome](https://fontawesome.com/)
+
+- 손쉽게 예쁘고 다양한 아이콘 넣기
+- class 이름으로 간단하게 아이콘 조작

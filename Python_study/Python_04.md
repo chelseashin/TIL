@@ -4,13 +4,26 @@ date : 2018-12-20
 
 author : chaewonshin
 
-title : 파이썬  dictionary 활용 기초
+title : Python Dictionary/Flask
 
 ------
 
+INDEX
+
+1. 딕셔너리 문제풀이
+
+2. flask
+
+   - lotto 출력
+
+   - form 을 통한 fake naver, google
+
+   - form 을 통한 요청과 응답
+
+   - opgg 전적검색
 
 
-#### 파이썬  dictionary 활용 기초!
+### 1. Dictionary 문제풀이!
 
 ------
 
@@ -139,3 +152,225 @@ print(dict.values())
   ```
 
 
+
+## 2. flask
+
+### 2-1. 로또 출력하기
+
+```python
+@app.route("/lotto")
+def lotto():
+    num_list = list(range(1,46))
+    lucky = random.sample(num_list, 6)
+    return render_template("lotto.html", lucky=sorted(lucky))
+```
+
+- `lotto.html`
+
+```python
+<h1>{{ lucky }}</h1>
+{% for num in lucky %}
+	<h1>{{ num }}</h1>
+{% endfor %}
+```
+
+### 2-2 fake naver/google
+
+- [https://search.naver.com/search.naver?query={검색어}](https://search.naver.com/search.naver?query=%7B%EA%B2%80%EC%83%89%EC%96%B4%7D)
+- [https://www.google.com/search?q={검색어}](https://www.google.com/search?q=%7B%EA%B2%80%EC%83%89%EC%96%B4%7D)
+
+```python
+@app.route("/naver")
+def naver():
+    return render_template("naver.html")
+
+@app.route("/google")
+def google():
+    return render_template("google.html")
+```
+
+- `naver.html`
+
+```python
+<h1>네이버 검색!!</h1>
+<form action="https://search.naver.com/search.naver">
+    <input type="text" name="query"/>
+    <input type="submit">
+</form>
+```
+
+- `google.html`
+
+```python
+<h1>구글 검색!!</h1>
+<form action="https://www.google.com/search">
+    <input type="text" name="q"/>
+    <input type="submit">
+</form>
+```
+
+### 2-3 form 을 통한 요청과 응답
+
+- ping 이 `name` 이라는 이름표를 가진 input 값을 pong 으로 보내면(`action="/pong"`)
+- pong 은 `name` 이름표를 받아 input 값을 받는다. (`request.args.get('name')`)
+
+```python
+@app.route("/ping")
+def hell():
+    return render_template("ping.html")
+
+@app.route("/pong")
+def hi():
+    user_name = request.args.get('name')
+    # user_name = request.args['name']
+    return render_template("pong.html", user_name=user_name)
+```
+
+- `ping.html`
+
+```python
+<form action="/pong">
+    <input type="text" name="name"/>
+    <input type="submit" value="submit">
+</form>
+```
+
+- `pong.html`
+
+```python
+<h1>{{ user_name }}</h1>
+```
+
+### 2-4 opgg 전적검색
+
+> 첫 조건을 잘 잡는 것이 관건.
+>
+> 1. 소환사가 존재하는지 존재하지 않는지.
+> 2. 존재한다면 랭크전적이 있는지 없는지.
+
+#### 1. 소환사가 있는지 없는지 판단, 있다면 승리 수 알아보기
+
+- `sohwan.html`
+
+```python
+<form action="/summoner">
+	소환사의 아이디를 입력하세요.
+	<input type="text" name="name">
+    <input type="submit" value="submit">
+</form>
+@app.route("/sohwan")
+def sohwan():
+    return render_template('sohwan.html')
+
+@app.route("/summoner")
+def summoner():
+    name = request.args.get('name')
+    req = requests.get(f"http://www.op.gg/summoner/userName={name}").text
+    soup = BeautifulSoup(req, "html.parser")
+    summoner = soup.select_one("body > div.l-wrap.l-wrap--summoner > div.l-container > div > div > div.Header > div.Profile > div.Information > span")
+    wins = soup.select_one("#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.SideContent > div.TierBox.Box > div.SummonerRatingMedium > div.TierRankInfo > div.TierInfo > span.WinLose > span.wins")
+    
+    if summoner:
+        return render_template("opgg.html", name=name, wins=wins.text)
+    else:
+        return render_template("nouser.html", name=name)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080, debug=True)
+```
+
+- `nouser.html`
+
+```python
+<h1>{{ name }} 소환사는 계정이 없습니다.</h1>
+```
+
+- `opgg.html`
+
+```python
+<h1>{{ name }} 의 이번 시즌 랭크 승: {{ wins }}</h1>
+```
+
+#### 2. 계정은 있으나 랭크 전적이 없을 때
+
+- `notier.html`
+
+```python
+<h1>{{ name }} 소환사는 랭크 전적이 없습니다.</h1>
+@app.route("/summoner")
+def summoner():
+    name = request.args.get('name')
+    req = requests.get(f"http://www.op.gg/summoner/userName={name}").text
+    soup = BeautifulSoup(req, "html.parser")
+    summoner = soup.select_one("body > div.l-wrap.l-wrap--summoner > div.l-container > div > div > div.Header > div.Profile > div.Information > span")
+    wins = soup.select_one("#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.SideContent > div.TierBox.Box > div.SummonerRatingMedium > div.TierRankInfo > div.TierInfo > span.WinLose > span.wins")
+    tier = soup.select_one("#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.SideContent > div.TierBox.Box > div.SummonerRatingMedium > div.TierRankInfo > div.TierRank > span")
+    
+    if summoner:
+        if tier.text == "Unranked":
+            return render_template("notier.html", name=name)
+        else:
+            return render_template("opgg.html", name=name, wins=wins.text)
+    else:
+        return render_template("nouser.html", name=name)
+    
+if __name__ == "__main__":
+app.run(host="0.0.0.0", port=8080, debug=True)
+```
+
+#### 3. flash / redirect / url_for
+
+> `redirect()` 를 활용하면, 사용자의 조회 위치를 변경할 수 있다.
+>
+> `url_for()` 는 route 주소로 이동하는 것이 아닌 정의된 **함수**를 호출한다.
+>
+> `flasing messages` 은 기본적으로 요청의 끝에 메시지를 기록하고 그 다음 요청에서만 그 메시지에 접근할 수 있게 한다. [doc](http://flask.pocoo.org/docs/1.0/patterns/flashing/)
+
+- `sowhan.html`
+
+```python
+<h3>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    {% endif %} 
+{% endwith %}
+</h3>
+<form action="/summoner">
+	소환사의 아이디를 입력하세요.
+	<input type="text" name="name">
+    <input type="submit" value="submit">
+</form>
+from flask import Flask, render_template, request, url_for, redirect, flash
+
+...
+
+@app.route("/sohwan")
+def sohwan():
+    return render_template("sohwan.html")
+    
+@app.route("/summoner")
+def summoner():
+    name = request.args.get('name')
+    url = f"http://www.op.gg/summoner/userName={name}"
+    req = requests.get(url).text
+    soup = BeautifulSoup(req, "html.parser")
+    summoner = soup.select_one("body > div.l-wrap.l-wrap--summoner > div.l-container > div > div > div.Header > div.Profile > div.Information > span")
+    wins = soup.select_one("#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.SideContent > div.TierBox.Box > div.SummonerRatingMedium > div.TierRankInfo > div.TierInfo > span.WinLose > span.wins")
+    tier = soup.select_one("#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.SideContent > div.TierBox.Box > div > div.TierRankInfo > div > span")
+    
+    if summoner and tier.text == "Unranked":
+        flash(f"{name} 소환사는 랭크 전적이 없습니다.")
+        return redirect(url_for('sohwan'))
+    elif summoner:
+        return render_template("opgg.html", name=name, wins=wins.text)
+    else:
+        flash(f"{name} 소환사가 없습니다.")
+        return redirect(url_for('sohwan'))
+
+if __name__ == "__main__":
+    app.secret_key = "Super_secret_key"			
+    app.run(host="0.0.0.0", port=8080, debug=True)
+```

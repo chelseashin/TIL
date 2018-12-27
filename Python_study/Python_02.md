@@ -4,13 +4,23 @@ date : 2018-12-18
 
 author : chaewonshin
 
-title : open files and work
-
-
+title : open files and work/Web Scraping
 
 ----
 
-##### string_test
+**INDEX**
+
+1. String Interpolation
+
+2. 파일명 바꾸기
+
+3. 웹스크래핑
+
+4. GitHub-static-website
+
+   ​	
+
+### 1. String Interpolation(문자열 삽입)
 
 ----
 
@@ -92,23 +102,45 @@ for i in range(500):
 
 ----
 
-##### ch_name
+### 2. 파일명 바꾸기
+
+> [zzu.li/dummy](http://zzu.li/dummy) 에서 가져온 코드 그대로 bash 에서 실행.
+>
+> 이제 500 개의 지원서를 조작해보자.
+
+- import os
+
+1. `os.chdir(r'폴더주소')` : 작업하고 있는 위치 변경
+2. `os.listdir('폴더주소')` : 저장된 디렉토리 전체 파일 목록 얻기
+3. `os.rename('현재파일명','바꿀 파일명')`
 
 ----
 
 ```python
 # 파일 이름 변경하기
 # dummy 폴더 안에 있는 사람들의 이름 앞에 SAMSUNG 붙이기
+
+#1 os 를 import 한다.
 import os
+
+#2 해당 폴더로 들어간다.
 os.chdir(r"C:\Users\student\Desktop\TIL\dummy")
+
+#3 폴더 안에 모든 파일을 돌면서 이름을 바꾼다.
 for filename in os.listdir("."):
-    os.rename(filename,"SAMSUNG " + filename)
+    os.rename(filename,"SAMSUNG " + filename)    
 ```
 
 ```python
 # SAMSUNG이 아니라 SSAFY로 바꾸기!
+
+#1 os 를 import 한다.
 import os 
+
+#2 해당 폴더로 들어간다.
 os.chdir(r"C:\Users\student\Desktop\TIL\dummy")
+
+#3 폴더 안에 모든 파일을 돌면서 이름을 바꾼다.
 for filename in os.listdir("."):
     os.rename(filename, filename.replace("SSAFY SSAFY", "SSAFY"))
 ```
@@ -219,3 +251,96 @@ f.close()
   ```
 
 
+
+### 3. 웹 스크래핑
+
+> 하나하나씩 내용물 찍어보면서 진행!
+
+- requests
+
+```python
+import requests
+req = requests.get("https://www.google.com")
+print(req)
+print(req.text)
+print(req.status_code)
+```
+
+#### 3-1. 정보 스크랩 1단계
+
+1. 원하는 정보가 있는 주소로 요청을 보내, 응답을 저장한다.
+
+```python
+import requests
+req = requests.get("https://www.google.com").text
+```
+
+1. 정보를 출력하여 확인한다.
+
+```python
+print(req)
+```
+
+#### 3-2. 코스피 지수
+
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#)
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+req = requests.get("https://www.google.com")
+
+soup = BeautifulSoup(req, 'html.parser')
+soup.select(경로)
+soup.select_one(경로)
+```
+
+#### 3-3. 정보 스크랩 2단계
+
+1. 정보를 조작하기 편하게 바꾸고,
+
+```python
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(req, 'html.parser')
+```
+
+1. 바꾼 정보 중 원하는 것만 뽑아서,
+
+```python
+kospi = soup.select_one(‘selector 경로’)
+```
+
+1. 출력한다
+
+```pythno
+print(kospi.text)
+```
+
+- kospi
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://finance.naver.com/sise/"
+req = requests.get(url).text
+soup = BeautifulSoup(req, 'html.parser')
+kospi = soup.select_one('#KOSPI_now')
+
+print(kospi.text)
+```
+
+**실습-1 네이버 실시간 검색어 스크래핑**
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://www.naver.com/'
+req = requests.get(url).text
+soup = BeautifulSoup(req, 'html.parser')
+
+for tag in soup.select('.PM_CL_realtimeKeyword_rolling .ah_item .ah_k'):
+    print(tag.text)
+```
