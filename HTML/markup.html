@@ -1,0 +1,188 @@
+<! doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style>
+        body {
+            height : 10000px;
+        }
+        table, tr, td {
+            border : 1px solid darkgrey;
+        }
+    </style>
+</head>
+    
+<body>
+    <h1 id="edu"><b>프로그래밍 교육</b></h1>
+    <a href="#python">파이썬</a>
+        <img src="images/python.png" alt="python">
+    <hr>
+    <!-- <h2><a href=""></h2> -->
+    <h3>Number type</h3>
+    <p>파이썬에서 숫자형은 아래와 같이 있다</p>
+
+    <ol>
+        <li>int</li>
+        <li>float</li>
+        <li>complex</li>
+        <li><del>str</del></li>
+    </ol>
+
+    <p><strong>Sequence</strong></p>    
+    <p>파이썬에서 시퀀스는 아래와 같이 있다</p>
+
+    <p><b>시퀀스는 for문을 돌릴 수 있다!!</b></p><br>
+
+    <ol>
+        <li>str</li>
+        <li>list</li>
+        <li>tuple</li>
+        <li>range</li><br>
+    </ol>
+    <!-- line -->
+    <hr>
+    <h2><b>웹</b></h2>
+
+    <h3>기초</h3>
+    <ul>
+        stype="list-style-type:"
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <section>
+        <a href="https://www.google.com/">절대 URL</a>
+        <a href="reference.html" target="_blank">상대 URL</a>
+        <a href="#edu">교육으로 이동</a>
+        <a href="mailto:test@gmail.com">메일보내기</a>
+    </section>
+    <section>
+        <!-- 붙여쓰기, ""써주기 -->
+        <img src="images/python.png" width="400px" height="400px" alt="python">
+        <!-- youtube video 넣기 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+            </tr>
+            <tr>
+                <td>A 코스</td>
+                <td colspan="2">짬뽕</td>
+                <td rowspan="2">초밥</td>
+            </tr>
+            <tr>
+                <td>B 코스</td>
+                <td>김치찌개</td>
+                <td>삼계탕</td>
+                </tr>
+        </table><br>
+
+    </section>
+    <section>
+        <table>
+            <tr>2019 타임테이블
+                <tr>
+                    <th>TIME</th>
+                    <th>INDOOR</th>
+                    <th colspan="2">OUTDOOR</th>
+                    <tr>
+                        <td></td>
+                        <td>소극장</td>
+                        <td>잔디마당</td>
+                        <td>대공연장</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td rowspan="2">안녕하신가영</td>
+                        <td></td>
+                        <td>10CM</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td rowspan="2">선우정아</td>
+                        <td rowspan="2">참깨와 솜사탕</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>크러쉬</td>
+                        <td></td>
+                        <td>폴킴</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tr>
+            </tr>    
+        </table><br><br>
+
+        <!-- form 실습 -->
+        <h2>FORM INPUT</h2>
+        <form action="https://www.google.com/search?">
+            텍스트 : <input type="text" name="q" autofocus><br>
+            이메일 : <input type="email" autocomplete="on"><br>
+            비밀번호 : <input type="password"><br>
+            날짜 : <input type="date">
+            <input type="hidden" name="해커" value="이 사람은 해커야!">
+            <input type="submit" value="전송!"><br>
+            <!-- radio button -->
+            <input type="radio" name="gender" value="female" checked>여자<br>
+            <input type="radio" name="gender" value="male">남자<br>
+            
+            <!-- check box -->
+            <input type="checkbox" name="option" value="1">sia<br>
+            <input type="checkbox" name="option" value="2">Queen<br>
+            <input type="checkbox" name="option" value="3">Bieber<br>
+
+            <input type="number" name="size" min="10" max="60" step="10" value="15"><br>
+            
+            <select name="country">
+                <option value="korea" selected>한국</option>
+                <option value="japan" disabled>일본</option>
+                <option value="china">중국</option>
+            </select>
+        </form>
+
+    <!-- form 실습 2 -->
+    
+    </section>
+        <h2>FORM</h2>
+        <p>주문서를 작성하여 주십시오.</p>
+            <form>
+                이름 : <input type="text" name="name" placeholder="이름을 입력해주세요"><br>
+                날짜 : <input type="date" value="2019-01-02">
+    
+                <h3><b>1. 샌드위치 선택</b></h3>
+                <input type="radio" name="sandwich", value="1" checked>에그 마요<br>
+                <input type="radio" name="sandwich", value="2">이탈리안 비엘티<br>
+                <input type="radio" name="sandwich", value="3">터키 베이컨 아보카도<br>
+                <hr><br>
+                <h3><b>2. 사이즈 선택</b></h3>
+                <input type="number" name="size" min="10" max="30" step="5" value="15"><br>
+                <hr><br>
+                <h3><b>3. 빵</b></h3>
+                <select name="bread">
+                        <option value="honey" selected>허니오트</option>
+                        <option value="flat" disabled>플랫브래드</option>
+                        <option value="hatti">하티 이탈리안</option>
+                </select>
+                <hr><br>
+                <h3><b>4. 야채/소스</b></h3>
+                <input type="checkbox" name="option" value="1">토마토<br>
+                <input type="checkbox" name="option" value="2">오이<br>
+                <input type="checkbox" name="option" value="3">할라피뇨<br>
+                <input type="checkbox" name="option" value="4">핫 칠리<br>
+                <input type="checkbox" name="option" value="5">바베큐<br>
+                <input type="submit" value="submit!"><br>
+            </form>
+    
+    </section>
+</body>
+</html>
