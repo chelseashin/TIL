@@ -1,0 +1,7 @@
+p, h3 {
+    color: darkgray;
+}
+.black_bg, .white {
+    color: white;
+    background-color: black;
+}
