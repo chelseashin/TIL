@@ -8,6 +8,8 @@ inline 레벨 요소 예
 
 span, a, strong, img, br, input, select, textarea, button
 
+
+
 ##### static
 
 * 기본값
