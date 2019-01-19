@@ -14,7 +14,7 @@ del movie_code[0]
 # print(movie_code)
 # print(len(movie_code))
 
-# url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=18bd1c05d20536ea27a4652bb41c4ecb&movieCd=20177538"
+# url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key={my_key2}&movieCd=20177538"
 # res = requests.get(url)
 # movie = res.json()
 # movie_info = movie['movieInfoResult']['movieInfo']
@@ -75,8 +75,8 @@ for i in range(len(movie_code)):
     directors.append(movie_info['directors'][0]['peopleNm'])
     watch_grade_nm.append(movie_info['audits'][0]['watchGradeNm'])
     # actor1.append(movie_info['actors'][0]['peopleNm'])
-    # actor2.append(movie_info['actors'][0]['peopleNm'])
-    # actor3.append(movie_info['actors'][0]['peopleNm'])
+    # actor2.append(movie_info['actors'][1]['peopleNm'])
+    # actor3.append(movie_info['actors'][2]['peopleNm'])
     if len(movie_info['actors']) >= 3:
         actor1.append(movie_info['actors'][0]['peopleNm'])
         actor2.append(movie_info['actors'][1]['peopleNm'])

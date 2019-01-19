@@ -38,7 +38,7 @@
 # from pprint import pprint
 
 
-# url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=c23242021a4f65d630ba6c5913b81b22&targetDt=20190113"
+# url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key={my_key1}&targetDt=20190113"
 # res = requests.get(url)
 # movie = res.json()
 
