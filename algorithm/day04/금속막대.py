@@ -7,25 +7,32 @@ for tc in range(T):      # testcase
     data = list(map(int, input().split()))
     # data = input()
     # print(data)
-    # print(len(data))
+    # print(len(data))   # N * 2
+    # first = data[0]
 
-    for idx, x in enumerate(data):
-        if idx % 2 == 0 and data[idx] in x:
+    new = [] # 첫 값 들어있는 쌍의 리스트
+    first = 0
+    for idx, value in enumerate(data):
+        if idx % 2 == 0 and data.count(value)%2 == 1:
+            first = idx
+    new.append(data[first])
+    new.append(data[first+1])
+    # print(new)
 
-            print(data)
+    i = 0
+    while i < len(data):
+        if data[first+1] == data[i]:
+            first = i
+            new.append(data[first])
+            new.append(data[first+1])
+            i = 0
+        else:
+            i += 2
+
+    print(f"#{tc + 1}", end=" ")
+    for i in range(len(new)):
+        print(new[i], end = ' ')
+    print()
 
 
-    # su = []
-    # for i in range(len(data)):
-    #     if i % 2 == 0:
-    #         su.append(data[i])
-    # print(su)
 
-    # for i in range(N):
-    #     for j in range(N):
-    #         if i % 2 == 0 and j % 2 == 1:
-    #             if data[i] == data[j]:
-    #                 print(min(data[i]))
-
-
-    # print(f"{tc + 1} {}")
