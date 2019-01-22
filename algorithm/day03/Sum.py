@@ -3,7 +3,7 @@ sys.stdin = open("sum.txt")       # 표준 입력
 
 T = 10
 for tc in range(T):      # testcase
-    N = int(input())
+    N = int(input())     # 문제 번호
     data = [[0 for i in range(100)] for j in range(100)]
     for i in range(100):
         data[i] = list(map(int, input().split()))

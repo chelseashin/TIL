@@ -15,6 +15,7 @@ def binarySearch(a, key):
 
     return -1    # 검색 실패
 
+
 key = 22
 data = [2, 4, 7, 9, 11, 19, 23]
 print(binarySearch(data, key))
