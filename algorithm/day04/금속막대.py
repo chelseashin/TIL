@@ -9,23 +9,18 @@ for tc in range(T):      # testcase
     # print(data)
     # print(len(data))
 
-    for idx, x in enumerate(data):
-        if idx % 2 == 0 and data[idx] in x:
+    new = []
+    first = data[0]
+    for idx, value in enumerate(data):
+        # print(idx, value)
+        if idx % 2 == 0 and data[idx+1] == data.count(value)%2 == 1:
+            first = idx
+    new.append(data[first])
+    new.append(data[first+1])
 
-            print(data)
-
-
-    # su = []
-    # for i in range(len(data)):
-    #     if i % 2 == 0:
-    #         su.append(data[i])
-    # print(su)
-
-    # for i in range(N):
-    #     for j in range(N):
-    #         if i % 2 == 0 and j % 2 == 1:
-    #             if data[i] == data[j]:
-    #                 print(min(data[i]))
+    i = 0
+    for i in len(data):
+        if data[]
 
 
     # print(f"{tc + 1} {}")
