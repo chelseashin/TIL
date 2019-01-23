@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <style>
+        div {
+            border: solid 1px black
+        }
+        .row {
+            background-color : moccasin;
+        }
+    </style>
+</head>
+
+<body>
+    Daily Workshop<br>
+    대전 2반 17번 신채원<br>
+    2019-01-23<br>
+    <br>
+    < Bootstrap & Grid System>
+        <br>
+        <br>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Python</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <!-- Forms -->
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password Confirmation</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <br>
+        <!-- Card image -->
+        <div class="div row">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn-images-1.medium.com/max/1600/1*QoR3rxWIbnf5wmF_IuAHqQ.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Git</h5>
+                    <p class="card-text">Git은 분산관리버전관리시스템입니다.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn-images-1.medium.com/max/1600/1*QoR3rxWIbnf5wmF_IuAHqQ.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Git</h5>
+                    <p class="card-text">Git은 분산관리버전관리시스템입니다.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn-images-1.medium.com/max/1600/1*QoR3rxWIbnf5wmF_IuAHqQ.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Git</h5>
+                    <p class="card-text">Git은 분산관리버전관리시스템입니다.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <h3>Homework</h3>
+        <!-- Buttons -->
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <!-- Alerts -->
+        <div class="alert alert-primary" role="alert">
+            Hello SSAFY ?!
+        </div>
+
+        <!-- grid -->
+        <div class="row">
+            <div class="square col-3">25%</div>
+            <div class="square col-6">50%</div>
+            <div class="square col-3">25%</div>
+        </div>
+
+</body>
+
+</html>
