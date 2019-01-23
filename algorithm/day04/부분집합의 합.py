@@ -9,8 +9,6 @@ for tc in range(T):      # testcase
     # print(len(data))
 
     arr = list(range(1, 13))     # len(arr) = 12
-    sum = 0
-    cnt = 0
     result = 0
     for i in range(1, 1 << len(arr)):      # 1<<n : 부분 집합의 개수
         sum = 0
