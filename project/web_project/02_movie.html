@@ -5,30 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movie</title>
+    <title>영화추천사이트</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="02_movie.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
 
-
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR|Noto+Serif+KR&subset=korean');
-
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-
-        .container {
-            margin:1rem;
-        }
-
-        .navbar {
-            background-image: url("photo.jpeg");
-        }
-
-    </style>
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a class="navbar-brand" href="#">영화추천시스템</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -48,6 +34,13 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container-fluids header-image">
+        <div class="header-text d-flex text-center align-contents-center">
+            <h2>당신에게 어울리는 영화를 추천해드립니다.</h2>
+        </div>
+    </div>
+
     <div class="container">
         <subtitle class="mx-3 text-center">
             <h3>영화목록</h3>
@@ -58,6 +51,7 @@
     <!-- Card image -->
     <div class="container">
         <div class="row">
+            <!-- 말모이 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-1">
                 <div class="card">
                     <img src="20184105.jpg" class="card-img-top" alt="말모이">
@@ -76,6 +70,7 @@
                 </div>
             </div>
 
+            <!-- 내 안의 그놈 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-1">
                 <div class="card">
                     <img src="20176251.jpg" class="card-img-top" alt="내 안의 그놈">
@@ -92,7 +87,8 @@
                     </div>
                 </div>
             </div>
-
+            
+            <!-- 글래스 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-1">
                 <div class="card">
                     <img src="20182544.jpg" class="card-img-top" alt="글래스">
@@ -111,11 +107,12 @@
 
             </div>
 
+            <!-- 주먹왕 랄프 2 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-1">
                 <div class="card">
                     <img src="20189463.jpg" class="card-img-top" alt="주먹왕 랄프">
                     <div class="card-body">
-                        <h4 class="card-title">주먹왕 랄프
+                        <h4 class="card-title">주먹왕 랄프 2
                             <span class="badge badge-dark">8.76</span>
                         </h4>
                         <hr>
@@ -127,6 +124,7 @@
                 </div>
             </div>
 
+            <!-- 언더독 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-1">
                 <div class="card">
                     <img src="20186324.jpg" class="card-img-top" alt="언더독">
@@ -143,6 +141,7 @@
                 </div>
             </div>
 
+            <!-- 아쿠아맨 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-1">
                 <div class="card">
                     <img src="20180290.jpg" class="card-img-top" alt="아쿠아맨">
@@ -160,6 +159,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- footer -->
+        <div class="footer bg-dark px-5 d-flex justify-content-between align-items-center ">
+            <div class="my_name text-white">© chelseashin.2019</div>
+            <a href="#"><i class="far fa-arrow-alt-circle-up text-white"></i></a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
