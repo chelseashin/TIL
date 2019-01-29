@@ -21,15 +21,15 @@ print(BruteForce(p, t))   # p가 t에 2번째에 처음으로 나온다!
 
 
 # 다른 방법
-def bruteForce2(text, pattern):
-    for i in range(len(text)-len(pattern)+1):
-        cnt = 0
-        for j in range(len(pattern)):
-            if text[i+j] != pattern[j]:
-                break
-            else:
-                cnt += 1
-        if(cnt >= len(pattern)):
-            return i
-
-print(bruteForce2(p, t))
+# def bruteForce2(text, pattern):
+#     for i in range(len(text)-len(pattern)+1):
+#         cnt = 0
+#         for j in range(len(pattern)):
+#             if text[i+j] != pattern[j]:
+#                 break
+#             else:
+#                 cnt += 1
+#         if(cnt >= len(pattern)):
+#             return i
+#
+# print(bruteForce2(p, t))
