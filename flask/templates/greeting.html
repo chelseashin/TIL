@@ -1,0 +1,15 @@
+<!-- 내 이름이 들어오면, 다른 사람이름이 들어오면 -->
+<!-- greeting.html -->
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Flask app</title>
+  </head>
+  <body>
+    {% if html_name == "채원" %}
+      <h1>안녕, {{ html_name }}아 왔니?</h1>
+    {% else %}
+      <h1>{{ html_name }}, 너는 누구야?</h1>
+    {% endif %}
+  </body>
+</html>
