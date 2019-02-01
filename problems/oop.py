@@ -3,9 +3,8 @@
 
 class Point:
     def __init__(self, x, y):
-        self.x = int(x)
-        self.y = int(y)
-        
+        self.x = x
+        self.y = y
 
 class Circle:
     def __init__(self, center, r):
@@ -27,18 +26,18 @@ class Circle:
     def print(self):
         print(f'circle : {self.get_center()}, r : {self.r}') 
 
-# p1 = Point(0, 0) 
-# c1 = Circle(p1, 3) 
-# print(c1.get_area()) 
-# print(c1.get_perimeter()) 
-# print(c1.get_center()) 
-# c1.print() 
-# p2 = Point(4, 5) 
-# c2 = Circle(p2, 1) 
-# print(c2.get_area()) 
-# print(c2.get_perimeter()) 
-# print(c2.get_center()) 
-# c2.print()
+p1 = Point(0, 0) 
+c1 = Circle(p1, 3) 
+print(c1.get_area()) 
+print(c1.get_perimeter()) 
+print(c1.get_center()) 
+c1.print() 
+p2 = Point(4, 5) 
+c2 = Circle(p2, 1) 
+print(c2.get_area()) 
+print(c2.get_perimeter()) 
+print(c2.get_center()) 
+c2.print()
 
 
 # 다른 연습
@@ -159,3 +158,54 @@ for i in range(len(a)):
 a = ['1', '2', '3']
 # print(list(map(int, a)))
 # print([int(x) for x in a])
+
+class Person:
+    name =  "첼씨"
+    def sayhello(self):
+        print(f"Hello, I'm {self.name}")
+
+iu = Person()
+iu.sayhello()
+print(iu.name)
+iu.name = '채원'
+print(iu.name)
+iu.sayhello()
+print(isinstance(iu, Person))
+print(iu)
+print(map(int, '123'))
+
+a = (1, 2)
+print(a)
+
+b = dict(x = 11, y = 22)
+print(b)
+
+c = list(range(10))
+c.append(100)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+iu = Person()
+iu.sayhello()
+Person.sayhello(iu)
+
+# class Saram:
+#     name = 'kim'
+#     phone = '01012345678'
+#     pocket = {'won' : 500, 'phone' : 1, 'candy' : 5}
+
+#     def in_my_pocket(self, stuff, count):
+#         if self.pocket.get(stuff):
+#             self.pocket[stuff] += count
+#         else:
+#             self.pocket[stuff] += count
+#         return self.pocket
+    
+#     def greeting(self):
+#         print(f'{self.name}, {self.phone}')
+
+#     def get_my_pocket(self):
+#         return self.pocket
