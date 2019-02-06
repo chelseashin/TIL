@@ -2,11 +2,7 @@
 
 < SQL >
 
-
-
-* 테이블 생성
-
-```sql
+```
 CREATE TABLE users (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 first_name TEXT,
@@ -20,9 +16,7 @@ balance INTEGER
 
 
 
-* 기초
-
-```sql
+```database
 sqlite> .tables
 classmate
 sqlite> SELECT * FROM classmate;                                                                                                                                      
@@ -102,7 +96,7 @@ sqlite> SELECT COUNT(*) FROM users;
 sqlite> SELECT AVG(age) FROM users WHERE age >= 30;
 
 sqlite> SELECT First_name, MAX(balance) FROM users;
-first_name, MAX(balance)
+first_name,MAX(balance)
 "순옥",1000000
 
 sqlite> SELECT AVG(balance) FROM users WHERE age >= 30;                                
@@ -166,7 +160,7 @@ balance INTEGER
 
 
 
-```sql
+```database
 flask에서 python기반으로 데이터 주고받기
 
 1. html을 python에서 열기 위해서 render_templates를 활용할 예정이다.
@@ -207,7 +201,7 @@ mode변경을 위해
 
 .mode csv
 
-chelseashin:~/workspace $ sqlite3
+kyeah:~/workspace $ sqlite3
 SQLite version 3.8.2 2013-12-06 14:53:30
 Enter ".help" for instructions
 Enter SQL statements terminated with a ";"
@@ -352,7 +346,6 @@ id          name        age         address
 2           신채원   15          서울
 3           안상현   43          대전
 4           신채원   15          서울
-
 sqlite> SELECT id, name FROM classmate;
 id          name
 ----------  ----------
@@ -360,14 +353,14 @@ id          name
 2           신채원
 3           안상현
 4           신채원
-
+sqlite>
+sqlite>
 sqlite> SELECT id, name FROM classmate LIMIT 2;
 id          name
 ----------  ----------
 1           안상현
 2           신채원
-
-# offset은 해당 행부터 LIMIT개 행만큼 출력
+sqlite>
 sqlite> SELECT * FROM classmate LIMIT 1 OFFSET 2;
 id          name        age         address
 ----------  ----------  ----------  ----------
