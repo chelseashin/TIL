@@ -69,7 +69,7 @@
 
   ```sql
   (flask-venv) chelseashin:~/workspace/orm $ flask db init
-  (flask-venv) chelseashin:~/workspace/orm $ flask db migrate
+  (flask-venv) chelseashin:~/workspace/orm $ flask db migrate -- migration 폴더 생성됨
   (flask-venv) chelseashin:~/workspace/orm $ flask db upgrade
   ```
 
@@ -341,9 +341,3 @@ class User(db.Model):
     
 {% endblock %}
 ```
-
-
-
-* CREATE READ
-* DELETE
-* UPDATE(기존의 값을 불러온 다음에 새로운 값 넣고 이걸 다시 넣어줘야 함...)

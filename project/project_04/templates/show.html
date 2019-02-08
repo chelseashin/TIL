@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+<!--{% block title %} 등록 영화 조회 {% endblock %}-->
+{% block head %} {{ super () }}
+<h1 class="text-center">등록 영화 조회</h1>
+<link rel="stylesheet" href="style.css" type="text/css" /> {% endblock %}
+
+{% block body %}
+<ul>
+    <li>
+        영화명 : {{ movie.title }}<br>
+        영화명(영문) : {{ movie.title_en }}<br>
+        누적 관객수 : {{ movie.audience }}<br>
+        개봉일 : {{ movie.open_date }}<br>
+        장르 :{{ movie.genre }}<br>
+        관람등급 : {{ movie.watch_grade }}<br>
+        평점 : {{ movie.score }}<br>
+        포스터 이미지 URL : {{ movie.poster_url }}<br>
+        영화소개 : {{ movie.description }}<br>
+        <a href="/movies/">[목록]</a>
+        <a href="/movies/{{ movie.id }}/edit/">[수정]</a>
+        <a href="/movies/{{ movie.id }}/delete/">[삭제]</a>
+    </li>
+</ul>
+{% endblock %}
