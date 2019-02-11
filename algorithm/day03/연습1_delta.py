@@ -17,7 +17,7 @@ def calAbs(y, x):
 arr = [[0 for _ in range(5)] for _ in range(5)]
 for i in range(5):
     arr[i] = list(map(int, input().split()))
-# print(arr)
+    print(arr)
 
 dx = [0, 0, -1, 1]
 dy = [-1, 1, 0, 0]

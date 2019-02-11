@@ -34,3 +34,15 @@ for tc in range(T):
     # print(str1, str2)
 
     print(f"#{tc + 1} {max_str(str1, str2)}")
+
+# 좋은 풀이
+
+T = int(input())
+for tc in range(T):
+    str1 = input()  # 찾을 패턴
+    str2 = input()  # 전체 텍스트
+    count = dict.fromkeys(str1, 0) # 딕셔너리 생성
+    # count = {}.fromkeys(str1, 0)  # 딕셔너리 생성
+
+    for ch in str2:
+        if ch in count:

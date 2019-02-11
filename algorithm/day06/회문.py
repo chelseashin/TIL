@@ -4,10 +4,10 @@ sys.stdin = open("회문.txt")
 
 def my_palindrome(data, N, M):
     for i in range(N):
-        for j in range(N-M+1):
+        for j in range(N-M+1):  # range 함수 써야하기 때문에 +1 해줌
             flag = 1
             for k in range(M//2):
-                if data[i][j+k] != data[i][j+M-1-k]:
+                if data[i][j+k] != data[i][j+M-1-k]:  # M-1 : 마지막 인덱스를 나타냄
                     flag = 0
                     break
             if flag:

@@ -39,3 +39,7 @@ for tc in range(T):      # testcase
     M = 100
 
     print(f"#{tc + 1} {max(rmax_pal(data, N, M), cmax_pal(data, N, M))}")
+
+
+
+#
