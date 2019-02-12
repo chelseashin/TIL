@@ -37,4 +37,25 @@ for tc in range(T):
             ice -= 1
 
     result = ice
+<<<<<<< HEAD
     print(f"#{tc+1} {result}")
+=======
+    print(f"#{tc+1} {result}")
+
+
+
+
+
+
+    # for i in range(len(data)):
+    #     for j in range(len(data)):
+    #         while i-1 < 100 and j-1 < 100:
+    #             if data[i][j] == 2:
+    #                 data[i][j+1] += 1
+    #                 if data[i+1][j] == 1:
+    #                     data[i+1][j] += 1
+    #                 elif data[i-1][j] == 1:
+    #                     data[i-1][j] += 1
+    #
+    # if data[0][j] == 2:
+>>>>>>> 2de0e94efbc2d8018050fb7ce33370c88542c10c
