@@ -3,13 +3,13 @@ def push(item):
 
 def pop():
     if len(s) == 0:
-        print("Stack is empty!")
+        print("Stack is Empty!")
         return
     else:
         return s.pop(-1)
-        # return s.pop()  # 위와 같은 의미
 
-s = []
+s=[]
+
 push(1)
 push(2)
 push(3)
@@ -17,3 +17,4 @@ push(3)
 print(pop())
 print(pop())
 print(pop())
+print(s)

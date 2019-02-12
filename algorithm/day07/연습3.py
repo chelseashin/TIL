@@ -35,11 +35,11 @@ def dfs(v):
 
     for w in range(n):
         if G[v][w] == 1 and visited[w] == 0:
-            dfs(w)
+            dfs(w)    # 재귀호출
 
 import sys
 sys.stdin = open("연습3.txt")
-
+# n : 정점횟수, e : 간선
 n, e = map(int, input().split())
 n += 1
 temp = list(map(int, input().split()))
@@ -57,3 +57,17 @@ for i in range(n):
 # dfs(G, 1, n)
 dfs(1)
 # 정답 예시 : 1-2-4-6-5-7-3
+
+
+# DFS 알고리즘 - 반복
+# stack s
+# visited[]
+# DFS(v)
+#     push(s, v)
+#     While not isEmpty( s )
+#     v <- pop(s)
+#     if not visited[v]
+#         visit(v)
+#         for each w in adjacency(v)
+#             if not visited[w]
+#                 push(s, w)
