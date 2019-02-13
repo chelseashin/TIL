@@ -1,26 +1,68 @@
 2019.02.13
 
-< Django 기본 흐름  >
+### < Django 기본 흐름  >
 
 
 
-0. ### 준비사항
+0. 준비사항
 
 1. pyenv / python / pyenv-virtualenv 설치 및 설정
 
    * python 3.6.7
+
    * git
 
 2. 가상환경 생성
 
    ```python
+   # install pyenv
+   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+   echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+   echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+   echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+   source ~/.bashrc
+   pyenv install 3.6.7
+   pyenv global 3.6.7
+   pyenv rehash
+   
+   
+   # install pyenv-virtualenv
+   git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+   echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+   source ~/.bashrc
+   
+   
+   # version 확인
+   chelseashin:~/workspace $ python -V
+   Python 3.6.7
+   chelseashin:~/workspace $ pyenv virtualenv 3.6.7 django-venv
    
    ```
 
 
 3. 프로젝트 폴더 생성 및 이동
+
+   ```python
+   # 가상환경 설정할 폴더로 이동
+   chelseashin:~/workspace $ pyenv virtualenvs
+   chelseashin:~/workspace $ mkdir PROJECT01
+   chelseashin:~/workspace $ cd PROJECT01/
+   ```
+
 4. local 가상환경 및 활성화
+
+   ```python
+   chelseashin:~/workspace/PROJECT01 $ pyenv local django-venv
+   ```
+
 5. 장고 설치
+
+   ```python
+   (django-venv) chelseashin:~/workspace/PROJECT01 $ pip install django
+   # 이제 장고 시작~
+   ```
+
+
 
 
 
@@ -32,15 +74,46 @@
 
 > django, test, class, django - test 는 프로젝트 이름으로 사용하면 안됨
 
+
+
 2. 서버 실행
 
 > ALLOWED_HOSTS = ['*']
 >
 > ALLOWED_HOSTS=['example-username.c9users.io']
 
+
+
 3. `gitignore` 설정
+
+   ```python
+   (django-venv) chelseashin:~/workspace/PROJECT01 $ touch .gitignore
+   (django-venv) chelseashin:~/workspace/PROJECT01 $ ls -al
+   ```
+
 4. TIMEZONE / LANGUAGE_CODE 설정
+
+   ```python
+   # setting.py에서 수정
+   
+   ALLOWED_HOSTS = ['django-intro-chelseashin.c9users.io']
+   
+   LANGUAGE_CODE = 'ko-kr'
+   
+   TIME_ZONE = 'Asia/Seoul'
+   ```
+
 5. 로켓 페이지 한글화 확인
+
+   ```python
+   # 중간에 폴더 안 생기도록 방지하기 위해 마지막에 '.' 붙여주기
+   (django-venv) chelseashin:~/workspace/PROJECT01 $ django-admin startproject django_intro .
+   (django-venv) chelseashin:~/workspace/PROJECT01 $ ls
+   django_intro/  manage.py*
+   (django-venv) chelseashin:~/workspace/PROJECT01 $ python manage.py runserver $IP:$PORT
+   # 서버 열기 - 로켓 한글 페이지 확인
+   ```
+
 6. 프로젝트 구조
 
 `manage.py` : 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인 유틸리티
@@ -59,7 +132,7 @@
 
 
 
-### 1.2 장고 어플리케이션(APP)
+#### 1.2 장고 어플리케이션(APP)
 
 * 실제로 특정한 역할을 하는 친구가 바로 APP
 
@@ -72,8 +145,8 @@
   1. 어플리케이션 만들기
   2. 어플리케이션 구조
 
-  * `admin.py` : 관리자용 페이지 커스터마이징 장소
-  * `apps.py` : 앱의 정보가 있는 곳. 우리는 수정할 일이 없습니다.
+  * `admin.py` : 관리자용 페이지 커스터마이징하는 곳
+  * `apps.py` : 앱의 정보가 있는 곳. 우리는 수정할 일이 없다!
   * `models.py` : 앱에서 사용하는 Model을 정의하는 곳
   * `tests.py` : 테스트 코드를 작성하는 곳
   * `views.py` : 뷰들이 정의되는 곳. 사용자에게 어떤 데이터를 보여줄지 구현되는 곳
@@ -82,57 +155,99 @@
 
   > home > apps.py > class HomeConfig()
   >
-  > `home.apps.HomeConfig`, 등록
+  > `settings.py`에서 INSTALLED_APPS에 `home.apps.HomeConfig` 등록
   >
   > 혹은 그냥 `home` 이라고 작성 가능. 다만 추후에 자세한 설정을 할 수 없다. 
 
+
+
 ### 2. MTV 패턴
+
+
 
 ### 3. VIEW
 
- 1. views
+```html
+1. views.py - 처리
+2. urls.py - 요청, 경로 설정
+3. templates(html...) - 결과 보여주는 역할 
+```
 
- 2. urls
-
- 3. templates
-
-     순으로 코드 작성하기
-
-
-
-    * HttpResponse로 첫 리턴 값 출력해보기
-    * path(route, views, name)  : 2개의 필수 인자(route, views) 와 1개의 선택 인자(name)
-    
-    * 저녁 메뉴 리턴 실습
+ 순으로 코드 작성하기
 
 
-4. ###  Template
+
+* HttpResponse로 첫 리턴 값 출력해보기
+
+```python
+from django.shortcuts import render, HttpResponse
+
+def index(request):
+    return HttpResponse('Welcome to Django!')
+```
+
+
+
+* `urls.py`에 경로 추가
+
+  * flask에서 `@app.route()` 역할
+  * path(route, views, name)  : 2개의 필수 인자(route, views) 와 1개의 선택 인자(name)
+  * 끝에 쉼표 `,`꼭 써주기!
+
+* 저녁 메뉴 리턴 실습
+
+```python
+# views.py에 함수 정의
+import random
+
+def dinner(request):
+    menu = ['치킨', '삼겹살', '비빔밥', '파스타', '피자']
+    return HttpResponse(random.choice(menu))
+
+# urls.py에 경로 추가
+urlpatterns = [
+    path('home/dinner/', views.dinner, name='dinner'),
+]
+```
+
+
+
+---
+
+### 4. Template
 
 - 장고에서 사용되는 템플릿은  DTL(Django Template Language)이다.
 - jinja2와 문법이 유사하지만 다르다
 
-4. ### 1 Template Variable
 
-* render()
-  * render(request, template_name, context=None, content_type=None, status=None, using=None)
 
----
+### 4.1 Template Variable
 
-### 4.2 Variable Routing
+render()
 
-​	def hello(request, name):
-
-​	return render(request, 'hello.html', {'name' = name})
+- render(request, template_name, context=None, content_type=None, status=None, using=None)
 
 
 
-5. ### Form data(get/post)
+### 4. 2 Variable Routing
 
+```python
+def hello(request, name):
+	return render(request, 'hello.html', {'name' = name})
+```
+
+
+
+### 5. Formdata(get/post)
+
+```python
 request.GET.get('data')
-
 request. POST.get('data')
+```
 
-{% csrf_token %}  를 form 안에서 같이 보내줘야 합니다.
+
+
+`{% csrf_token %}`  를 form 안에서 같이 보내줘야 합니다.
 
 > csrf 공격과 같은 보안과 관련된 사항은 settings에 MIDDLEWARE에 되어 있다.
 >
@@ -142,5 +257,16 @@ request. POST.get('data')
 
 
 
-6. Templates Inheritance
-   * home / templates / base.html 생성
+### 6. Templates Inheritance
+
+* home > templates > base.html 을 작성하여 기본바탕을 만들어준다.
+
+* 다른 html파일을 다음과 같이 수정
+
+```html
+{% extends 'base.html' %}
+{% block title %}	title	{% endblock %}
+{% block body %}
+    body contents
+{% endblock %}
+```

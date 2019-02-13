@@ -1,6 +1,6 @@
 2019.02.13
 
-< Django 기초  >
+< Django start  >
 
 #### Django 가상환경 만들기
 
@@ -48,10 +48,9 @@ $ git config --global --list
 # 버전 확인
 chelseashin:~/workspace $ python -V
 Python 3.6.7
+
 chelseashin:~/workspace $ pyenv virtualenv 3.6.7 django-venv
-Looking in links: /tmp/tmpot1_tx_4
-Requirement already satisfied: setuptools in /home/ubuntu/.pyenv/versions/3.6.7/envs/django-venv/lib/python3.6/site-packages (39.0.1)
-Requirement already satisfied: pip in /home/ubuntu/.pyenv/versions/3.6.7/envs/django-venv/lib/python3.6/site-packages (10.0.1)
+
 # 가상환경 설정할 폴더로 이동
 chelseashin:~/workspace $ pyenv virtualenvs
 chelseashin:~/workspace $ mkdir PROJECT01
@@ -149,13 +148,13 @@ db.sqlite3  django_intro/  manage.py*
 (django-venv) chelseashin:~/workspace/PROJECT01/home $ tree .
 .
 ├── __init__.py
-├── admin.py   # 관리자형 파일을 customize
-├── apps.py    # app 정보
+├── admin.py   # 관리자용 페이지 커스터마이징하는 곳
+├── apps.py    #  앱의 정보가 있는 곳. 우리는 수정할 일이 없다!
 ├── migrations
 │   └── __init__.py
-├── models.py
-├── tests.py
-└── views.py
+├── models.py  # 앱에서 사용하는 Model을 정의하는 곳
+├── tests.py   # 테스트 코드를 작성하는 곳
+└── views.py   # 뷰들이 정의되는 곳. 사용자에게 어떤 데이터를 보여줄지 구현되는 곳
 # 위 3개가 MTV
 1 directory, 7 files
 ```
@@ -289,12 +288,12 @@ def hello(request, name):
     return render(request, 'hello.html', {'name': name})
     
 def cube(request, number):
+    # 연산작업은 주로 views에서 함
     result = number ** 3
     return render(request, 'cube.html', {'number': number, 'result': result})
+# html로 넘겨줄 값
     
-    
-# urls.py
-# 주소 추가
+# urls.py - 경로 설정
  	path('home/cube/<int:number>/', views.cube, name= 'cube'),
     path('home/hello/<name>/', views.hello, name= 'hello'),
 ```
@@ -337,7 +336,7 @@ def pong(request):
 # ping.html
 
 <body>
-    <form action='/home/pong'>
+    <form action='/home/pong/'>
         <input type="text" name ="data">
         <input type="submit" value ="Submit">
     </form>
@@ -379,7 +378,7 @@ urlpatterns = [
         <input type="text" name ="nickname">
         <input type="password" name ="pwd">
         <input type="submit" value ="Submit">
-    </form>
+</form>
 
 # user_create.html
 <h1>nickname : {{ nickname }}</h1>
@@ -388,3 +387,63 @@ urlpatterns = [
 
 
 
+* html의 base가 되는 base.html 생성
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>장고 연습</h1>
+    
+    <hr>
+    
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+```
+
+
+
+* base.html을 만들었기 때문에 이를 바탕으로
+*  user_new.html와 user_create.html를 수정해보자.
+
+```html
+# user_new.html
+
+{% extends 'base.html' %}
+{% block title %}user_new{% endblock %}
+{% block body %}
+    <form action='/home/user_create/' method='POST'>
+        <!--사이트 위조 방지-->
+        {% csrf_token %} 
+        <input type="text" name ="nickname">
+        <input type="password" name ="pwd">
+        <input type="submit" value ="Submit">
+    </form>
+{% endblock %}
+
+# user_create.html
+{% extends 'base.html' %}
+{% block title %}user_create{% endblock %}
+{% block body %}
+    <h1>nickname : {{ nickname }}</h1>
+    <h1>password : {{ pwd }}</h1>
+{% endblock %}
+```
