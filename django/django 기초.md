@@ -1,8 +1,10 @@
 2019.02.13
 
-< Django start  >
+### < Django start  >
 
-#### Django 가상환경 만들기
+#### 
+
+* Django 가상환경 만들기
 
 ```python
 # install pyenv
@@ -24,7 +26,7 @@ source ~/.bashrc
 
 
 
-#### git user 설정
+* git user 설정
 
 ```python
 # git
@@ -42,7 +44,7 @@ $ git config --global --list
 
 
 
-#### Django 시작
+* Django 시작
 
 ```python
 # 버전 확인
@@ -134,7 +136,7 @@ http://django-intro-chelseashin.c9users.io:8080/admin/
 
 
 
-### terminal에 작성
+* terminal에 작성
 
 ```python
 (django-venv) chelseashin:~/workspace/PROJECT01 $ ls
@@ -262,7 +264,7 @@ urlpatterns = [
 
 
 
-## 작성 순서!
+#### 작성 순서!
 
 1. 처리할 views(controller)
 2.  요청 urls
@@ -270,7 +272,7 @@ urlpatterns = [
 
 
 
-## git push
+#### git push
 
 ```python
 git remote add origin https://github.com/chelseashin/django_intro.git
@@ -421,8 +423,7 @@ urlpatterns = [
 
 
 
-* base.html을 만들었기 때문에 이를 바탕으로
-*  user_new.html와 user_create.html를 수정해보자.
+* base.html을 만들었기 때문에 이를 바탕으로 user_new.html와 user_create.html을 수정해보자.
 
 ```html
 # user_new.html

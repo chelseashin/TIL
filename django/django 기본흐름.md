@@ -9,8 +9,7 @@
 1. pyenv / python / pyenv-virtualenv 설치 및 설정
 
    * python 3.6.7
-
-   * git
+   * git 
 
 2. 가상환경 생성
 
@@ -212,8 +211,6 @@ urlpatterns = [
 
 
 
----
-
 ### 4. Template
 
 - 장고에서 사용되는 템플릿은  DTL(Django Template Language)이다.
@@ -221,15 +218,16 @@ urlpatterns = [
 
 
 
-### 4.1 Template Variable
+#### 4.1 Template Variable
 
 render()
 
 - render(request, template_name, context=None, content_type=None, status=None, using=None)
 
 
+----
 
-### 4. 2 Variable Routing
+#### 4. 2 Variable Routing
 
 ```python
 def hello(request, name):
@@ -238,7 +236,7 @@ def hello(request, name):
 
 
 
-### 5. Formdata(get/post)
+### 5. Form data(get/post)
 
 ```python
 request.GET.get('data')
