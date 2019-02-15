@@ -1,0 +1,32 @@
+body {
+    height: 2000px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+    /*text-align: center;*/
+    line-height: 350px;
+    height: 350px;
+    width: 100%;
+    color: navy;
+    background-image: url( "../images/back.jpg" );
+    background-size: cover;
+}
+
+.header_error {
+    line-height: 350px;
+    height: 350px;
+    width: 100%;
+    color: navy;
+    background-color:orange;
+}
+
+.footer {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: crimson;
+}

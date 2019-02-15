@@ -224,7 +224,6 @@ render()
 
 - render(request, template_name, context=None, content_type=None, status=None, using=None)
 
-
 ----
 
 #### 4. 2 Variable Routing
@@ -243,9 +242,9 @@ request.GET.get('data')
 request. POST.get('data')
 ```
 
+* POST 방식은 무조건
 
-
-`{% csrf_token %}`  를 form 안에서 같이 보내줘야 합니다.
+`**{% csrf_token %}`  를 form 안에서 같이 보내줘야 합니다.**
 
 > csrf 공격과 같은 보안과 관련된 사항은 settings에 MIDDLEWARE에 되어 있다.
 >
