@@ -12,6 +12,7 @@ for tc in range(T):
     # 2 : S극 성질 가지는 자성체(아래)
 
 # 열을 기준으로 생각해보자. 항상 순서는 1, 2 이다.
+# 0, 1로 푸는 거라면 flag라고 쓰는 것이 좋다!
     cnt = 0
     for i in range(N):   # 행
         stack = 0

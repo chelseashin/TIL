@@ -30,4 +30,5 @@ for x in range(len(arr)):
             testY = y + dy[i]
             if isWall(testX, testY) == False:
                 sum += calAbs(arr[y][x], arr[testY][testX])
+
 print("sum = {}".format(sum))
