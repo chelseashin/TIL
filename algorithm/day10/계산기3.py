@@ -6,5 +6,17 @@ for tc in range(T):
     N = int(input())
     data = input()
     # data = list(map(str, input().split()))
-    print(N)
-    print(data)
+    # print(data)
+
+    op = "+-*/()"
+    stack = []
+    for i in range(len(data)):
+        if data[i] not in op:
+            stack.append(int(data[i]))
+        elif data[i] == "(" :
+            stack.append(data[i])
+            if data[i] not in op:
+                stack.append(data[i])
+            elif data[i] == ")":
+
+        # elif data[i] == "+" or data[i] == "-" or data[i] == "*" or data[i] == "/":
