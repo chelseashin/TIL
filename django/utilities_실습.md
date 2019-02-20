@@ -101,3 +101,21 @@
 * c9 open ~/.bashrc : c9에서 환경변수 설정
 
 * source ~/.bashrc : 저장
+
+
+
+* #### 폴더 위치 변경 - 일반적인 개발 구조
+
+   *  앱 파일 안에 templates 새로 만들어줌(직접 폴더 만들어 주어야 함)
+   *  settings.py 변경사항
+
+  ```python
+  TEMPLATES = [
+      {
+          'BACKEND': 'django.template.backends.django.DjangoTemplates',
+          'DIRS': [os.path.join(BASE_DIR, 'django_intro', 'templates')],
+  ```
+
+  ##### 위의 의미는 PROJECT01/django_intro/templates/ 로 경로를 만들어주는 것. 
+
+  ##### templates를 바라보도록!

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c971608a-973d-40c1-a832-0ce85c09c0d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day10/계산기3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day10/계산기3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day10/미로.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day10/미로.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../django/utilities_실습.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../django/utilities_실습.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +24,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../day10/계산기3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="342">
               <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
             </state>
           </provider>
@@ -302,14 +299,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="754" y="0" width="788" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25871313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38603988" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38603988" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -427,7 +423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../day10/계산기3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="342">
           <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
