@@ -6,7 +6,7 @@ for tc in range(T):
     N = int(input())
     data = input()
     # data = list(map(str, input().split()))
-    # print(data)
+    print(data)
 
     op = "+-*/()"
     stack = []

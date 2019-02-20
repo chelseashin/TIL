@@ -51,6 +51,7 @@
 4. local 가상환경 및 활성화
 
    ```python
+   # 항상 폴더 이동 후 가상환경 만들기
    chelseashin:~/workspace/PROJECT01 $ pyenv local django-venv
    ```
 
