@@ -1,48 +1,34 @@
 SIZE = 4
-Q = [0]*  SIZE
+Q = [0]*SIZE
 front, rear = 0, 0
-
 def isFull():
-    global rear
-    return rear == len(Q)-1
-
-
+    global front, rear
+    return (rear+1) % len(Q) == front
 def isEmpty():
     global front, rear
     return front == rear
-
 def enQueue(item):
     global rear
-    if isFull():
-        print("Queue is Full")
+    if isFull(): print("Queue Full")
     else:
-        rear = rear + 1;
-        Q[rear] = item;
-
+        rear = (rear+1) % len(Q)
+        Q[rear] = item
 def deQueue():
     global front
-    if isEmpty():
-        print("Queue is Empty")
+    if isEmpty() : print("Queue Empty")
     else:
-        front += 1
+        front = (front+1)%len(Q)
         return Q[front]
 
-def Qpeek():
-    global front, rear
-    if isEmpty():
-        print("Queue is Empty")
-    else:
-        return Q[front+1]
 
 enQueue(1)
 enQueue(2)
 enQueue(3)
-
 print(deQueue())
 print(deQueue())
 print(deQueue())
-
 enQueue(4)
 print(deQueue())
 enQueue(5)
 print(deQueue())
+print(Q)

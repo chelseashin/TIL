@@ -38,7 +38,7 @@ T = int(input())
 for tc in range(T):
     N = int(input())
     maze = [list(map(int, input())) for _ in range(N)]
-    # print(maze)
+    print(maze)
 
     start_x = 0  # 시작할 장소의 x, y좌표
     start_y = 0
