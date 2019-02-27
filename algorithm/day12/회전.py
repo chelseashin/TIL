@@ -8,6 +8,7 @@ for tc in range(T):
 
     num = M % N
     print(f"#{tc + 1} {data[num]}")
+<<<<<<< HEAD
 
 
 # 숫자 단위로 풀어보기 - 나중에 해보자
@@ -26,3 +27,5 @@ for tc in range(T):
 #             total += 1
 #     print(new)    # 숫자 리스트 형태
 #     print(total)  # 리스트의 길이
+=======
+>>>>>>> f889023d21ee06bce0a3af518e88ea3be20c9f17

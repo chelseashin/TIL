@@ -1,17 +1,26 @@
 import sys
 sys.stdin = open("노드의 경로.txt")
 
+<<<<<<< HEAD
 def bfs(S):  # 1에서 가장 멀리 있는 정점을 찾으시오.
     global data, G
     queue = []
 
     queue.append(S)  #enQueue하면서 방문처리
+=======
+def bfs(S):
+    global data, G
+    queue = []
+    queue.append(S)
+
+>>>>>>> f889023d21ee06bce0a3af518e88ea3be20c9f17
     visited[S] = 1
     while len(queue) != 0:
         t = queue.pop(0)
         for w in range(1, V+1):
             if data[t][w] == 1 and visited[w] == 0:
                 queue.append(w)
+<<<<<<< HEAD
                 visited[w] = visited[t] + 1
                 print(w, end=" ")
 
@@ -33,3 +42,28 @@ for tc in range(T):
     # print(S, G)
     # bfs(S)
     # print("#{tc + 1} {bfs(S)}")
+=======
+                visited[w] = visited[t]+1
+    if visited[G] == 0:
+        return 0
+    else:
+        return visited[G] - 1
+
+T = int(input())
+for tc in range(T):
+    flag = 0
+    V, E = map(int, input().split())
+
+    data = [[0 for i in range(V + 1)] for j in range(V + 1)]  # 2차원 초기화
+    visited = [0 for i in range(V + 1)]  # 방문처리
+
+    for i in range(E):  # 입력
+        x, y = map(int, input().split())
+        # 인접행렬 만들기
+        data[x][y] = 1
+        data[y][x] = 1
+    S, G = map(int, input().split())
+    # print(data)
+
+    print(f"#{tc + 1} {bfs(S)}")
+>>>>>>> f889023d21ee06bce0a3af518e88ea3be20c9f17
