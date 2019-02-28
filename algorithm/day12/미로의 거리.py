@@ -17,41 +17,23 @@ def isWall(x, y):
 
 def bfs_maze(x, y):
     global maze, visited
-<<<<<<< HEAD
     queue = []
     visited[x][y] = 1
     queue.append((x, y)) # 갈 수 있는 곳을 큐에 넣기
     # maze[x][y] = 9    # 방문표시
     while queue:
         x, y = queue.pop(0)
-=======
-    queue = []  # 갈 수 있는 곳을 큐에 넣기
-    visited[x][y] = 1
-
-    queue.append((x, y))
-    # maze[x][y] = 9    # 방문표시
-    while queue:
-        x, y= queue.pop(0)
->>>>>>> f889023d21ee06bce0a3af518e88ea3be20c9f17
         dx = [0, 0, -1, 1]
         dy = [-1, 1, 0, 0]
         for i in range(4):
             new_x = x + dx[i]   # i가 반복되면서 상/하/좌/우를 적용했을 때의
             new_y = y + dy[i]   # 새로운 좌표 생성
             if isWall(new_x, new_y) == False: # 벽이 아니라면
-<<<<<<< HEAD
                 if maze[new_x][new_y] == 0 and visited[new_x][new_y] == 0:
                     queue.append((new_x, new_y))
                     visited[new_x][new_y] = visited[x][y] + 1
                 if maze[new_x][new_y] == 3:   # 목적지를 만나면
                     return visited[x][y] - 1  # 시작점부터 1을 셌기 때문에 -1 해줘야 거리 나옴.
-=======
-                if maze[new_x][new_y] == 3:  # 목적지를
-                    return visited[x][y]-1
-                if maze[new_x][new_y] == 0 and visited[new_x][new_y] == 0:
-                    queue.append((new_x, new_y))
-                    visited[new_x][new_y] = visited[x][y] + 1
->>>>>>> f889023d21ee06bce0a3af518e88ea3be20c9f17
     return 0
 
 T = int(input())
@@ -64,10 +46,5 @@ for tc in range(T):
 
     # 시작할 장소의 x, y 좌표
     start_x, start_y = find_start(maze)
-<<<<<<< HEAD
     distance = bfs_maze(start_x, start_y)
     print(f'#{tc+1} {distance}')
-=======
-    result = bfs_maze(start_x, start_y)
-    print(f'#{tc+1} {result}')
->>>>>>> f889023d21ee06bce0a3af518e88ea3be20c9f17

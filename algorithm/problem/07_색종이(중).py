@@ -31,5 +31,6 @@ result = 0
 for i in range(110):
     for j in range(110):
         if arr[i][j] == 1:
+            # 둘레 구하는 함수
             result += diff(i, j)
 print(result)
