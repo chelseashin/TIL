@@ -14,9 +14,9 @@ def check_pattern(x, y):
         for b in range(P):
             # 좌표 대 좌표로만 비교하면 훨씬 효율적임!
             # 하나하나 다 체크하기보다 하나라도 아니면 바로 0을 리턴
-            if arr[i+a][j+b] != pattern[a][b]:
-                return 0
-    return 1
+            if arr[x+a][y+b] != pattern[a][b]:
+                return 0    # 패턴 다름
+    return 1    # 패턴 같음
 
 ans = 0
 for i in range(N-P+1):
