@@ -10,6 +10,8 @@ for tc in range(T):      # testcase
     for i in range(len(data)):
         # print(data[i])
         new[int(data[i])] += 1
+    # print(new)
+
     card = 0
     num = 0
     for i in range(len(new)):
