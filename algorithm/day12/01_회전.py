@@ -7,7 +7,7 @@ for tc in range(T):
     data = list(map(int, input().split()))
 
     num = M % N
-    print(f"#{tc + 1} {data[num]}")
+    print("#{} {}".format(tc + 1, data[num]))
 
 
 # 숫자 단위로 풀어보기 - 나중에 해보자

@@ -23,7 +23,7 @@ for tc in range(T):
             # data[i][j]
             total.append(flies(i, j))
 
-    print(f"#{tc+1} {max(total)}")
+    print("#{} {}".format(tc+1, max(total)))
     
     
 # 좋은 풀이 - 최대, 최소 구하기

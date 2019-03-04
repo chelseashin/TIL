@@ -10,7 +10,7 @@ def bfs(S):  # 1에서 가장 멀리 있는 정점을 찾으시오.
     while len(queue) != 0:
         t = queue.pop(0)
         for w in range(1, V+1):
-            if data[t][w] == 1 and visited[w] == 0:
+            if data[t][w] == 1 and visited[w] == 0:    # 인접해있고 방문 안했을 때
                 queue.append(w)
                 visited[w] = visited[t] + 1
                 print(w, end=" ")

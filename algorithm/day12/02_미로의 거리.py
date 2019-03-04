@@ -7,6 +7,7 @@ def find_start(data):
         for y in range(N):
             if data[x][y] == 2:
                 return x, y
+
 # 벽인지 판단하는 함수
 def isWall(x, y):
     global N, maze
@@ -23,7 +24,7 @@ def bfs_maze(x, y):
     # maze[x][y] = 9    # 방문표시
     while queue:
         x, y = queue.pop(0)
-        dx = [0, 0, -1, 1]
+        dx = [0, 0, -1, 1]    # 상 하 좌 우
         dy = [-1, 1, 0, 0]
         for i in range(4):
             new_x = x + dx[i]   # i가 반복되면서 상/하/좌/우를 적용했을 때의
@@ -47,4 +48,4 @@ for tc in range(T):
     # 시작할 장소의 x, y 좌표
     start_x, start_y = find_start(maze)
     distance = bfs_maze(start_x, start_y)
-    print(f'#{tc+1} {distance}')
+    print('#{} {}'.format(tc+1, distance))

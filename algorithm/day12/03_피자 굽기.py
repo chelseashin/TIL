@@ -11,7 +11,7 @@ for tc in range(T):
     new = []
     for i in range(M):
         new.append([i, C[i]])
-    print(new)
+    # print(new)
 
     # queue 채우기
     queue = []
@@ -30,4 +30,4 @@ for tc in range(T):
             queue.append(new[idx])
             idx += 1
 
-    print(f"#{tc+1} {t[0]+1}")
+    print("#{} {}".format(tc+1, t[0]+1))
