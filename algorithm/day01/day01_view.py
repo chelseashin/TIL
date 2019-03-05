@@ -13,7 +13,7 @@ for tc in range(T):      # testcase
     print("#{} {}".format(tc + 1, ans))
 
 
-# 다른 풀이
+# 좋은 풀이
 # import sys
 # sys.stdin = open("view_input.txt")
 # T = 10

@@ -6,6 +6,7 @@ N = 5
 # for i in range(5):
 #     L.append(list(map(float, input().split())))
 L = [list(map(float, input().split())) for _ in range(5)]
+# print(L)
 
 time = 0
 for i in range(N):

@@ -4,7 +4,7 @@ sys.stdin = open("연습1.txt")
 V, E = map(int, input().split())
 print(V, E)
 tree = [[0 for _ in range(3)] for i in range(V+1)]
-print(tree)
+# print(tree)
 temp = list(map(int, input().split()))
 
 # 전위순회
@@ -30,7 +30,7 @@ def postorder(node):
 
 def printTree():
     for i in range(1, V+1):
-        print("%2d %2d %2d %2d" % (i, tree[i][0], tree[i][1], tree[i][2])
+        print("%2d %2d %2d %2d" % (i, tree[i][0], tree[i][1], tree[i][2]))
 
 
 for i in range(E):

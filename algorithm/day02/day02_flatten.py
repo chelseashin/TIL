@@ -3,7 +3,6 @@ sys.stdin = open("flatten.txt")       # 표준 입력
 
 T = 10
 for tc in range(T):      # testcase
-    ans = 0
     N = int(input())
     data = list(map(int, input().split()))
     # print(data)
