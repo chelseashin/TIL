@@ -10,29 +10,35 @@ for i in range(1, R+1):
 N = int(input())
 dir = list(map(int, input().split()))   # 2 3 1 4 1 3
 
+# 좌표 받으면 움직이면서 몇칸 움직였는지 체크
 def marble(x, y):
     # 방향순서
-    can = 0
+    dno = 0
     # 원래 위치, 위, 아래, 좌, 우
     dx = [0, -1, 1, 0, 0]
     dy = [0, 0, 0, -1, 1]
     # 전체 칸 수
-    count = 0
+    distance = 1
 
     while True:
-        if arr[x][y] == 2:
-            arr[x][y] = 0
-            can += 1
-        elif arr[x+dx[dir[can]]][y+dy[dir[can]]] == 1:
-            arr[x + dx[dir[can]]][y + dy[dir[can]]] = 9
-            count += 1
-            if can > N-1:
-                can = 0
-        else:
-            break
-    return count
+        x += dx[dir[dno]]
+        y += dy[dir[dno]]
+
+        if arr[x][y] == 0:
+            arr[x][y] = 9
+            distance += 1
+
+        elif arr[x][y] == 1:  # 벽이면 전단계로 이동하고 방향 전환
+            x = x-dx[dir[dno]]
+            y = y-dy[dir[dno]]
+            dno += 1
+            if dno > N-1:
+                break
+
+    return distance
 
 for i in range(1, N+1):
     for j in range(1, N+1):
         if arr[i][j] == 2:
-            print(marble(i, j))
+            arr[i][j] = 9
+            print(marble(i, j))    # 구슬이 지나간 칸 수

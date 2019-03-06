@@ -23,7 +23,6 @@ def catch_rabbit(x, y):
                 count += 1
     return count
 
-
 rabbits = 0
 for i in range(1, N+1):
     for j in range(1, N+1):
