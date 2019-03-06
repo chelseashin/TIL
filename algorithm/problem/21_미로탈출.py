@@ -12,7 +12,7 @@ dir = list(map(int, input().split()))    # 1 4 3 2
 dno = 0    # 방향의 순서
 dx = [0, 1, 0, -1, 0]    # 원래 좌표, 아, 왼, 위, 오
 dy = [0, 0, -1, 0, 1]
-x, y = 1, 1    #
+x, y = 1, 1    # 시작좌표
 cnt = 0
 
 while True:
