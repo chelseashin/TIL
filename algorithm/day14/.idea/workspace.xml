@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d33d135-adcf-4c5b-9734-0d1e871623f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../day13/이진힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/day14.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_서브트리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_이진탐색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/노드의합_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/서브트리_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진탐색_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진힙_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem/17_월동준비.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem/18_덧셈.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem/월동준비.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01/day01_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/day01_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day02/day02_flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/day02_flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day13/.idea/day13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../day13/.idea/day13.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day13/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day13/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day13/공통조상.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day13/공통조상.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day13/트리_연습1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day13/트리_연습1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy/07_구간합.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mystudy/07_구간합.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy/08_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mystudy/08_View.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy/09_flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mystudy/09_flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../problem/12_폭탄돌리기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../problem/12_폭탄돌리기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../problem/15_시간외근무수당.py" beforeDir="false" afterPath="$PROJECT_DIR$/../problem/15_시간외근무수당.py" afterDir="false" />
-    </list>
+    <list default="true" id="8d33d135-adcf-4c5b-9734-0d1e871623f6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +12,7 @@
     <session id="-756530160">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -160,7 +133,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../day02/day02_flatten.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
+                <state relative-caret-position="72">
                   <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
                 </state>
               </provider>
@@ -382,7 +355,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32969433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +475,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../day02/day02_flatten.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="72">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>

@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9d8812f-f55c-4ad9-b069-c404584d2010" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/이진힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/.idea/day14.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/01_서브트리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/02_이진탐색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/노드의합_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/서브트리_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/이진탐색_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day14/이진힙_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem/17_월동준비.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem/18_덧셈.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem/월동준비.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01/day01_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/day01_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day02/day02_flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day02/day02_flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/day13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/day13.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/공통조상.py" beforeDir="false" afterPath="$PROJECT_DIR$/공통조상.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/트리_연습1.py" beforeDir="false" afterPath="$PROJECT_DIR$/트리_연습1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy/07_구간합.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mystudy/07_구간합.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy/08_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mystudy/08_View.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy/09_flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mystudy/09_flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../problem/12_폭탄돌리기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../problem/12_폭탄돌리기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../problem/15_시간외근무수당.py" beforeDir="false" afterPath="$PROJECT_DIR$/../problem/15_시간외근무수당.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day14/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +14,7 @@
     <session id="-560016695">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="2" />
@@ -197,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="151" />
     <option name="y" value="7" />
     <option name="width" value="831" />
@@ -384,7 +359,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="151" y="7" width="831" height="1100" extended-state="1" />
+    <frame x="151" y="7" width="831" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.36285362" />
@@ -392,7 +367,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3116615" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3116615" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995633" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
