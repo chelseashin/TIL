@@ -16,6 +16,7 @@
     <session id="-109999808">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -52,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../problem/21_미로탈출.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="119">
               <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <marker date="1551867516968" expanded="true" signature="271:273" ph="..." />
@@ -81,10 +82,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../problem/24_구슬굴리기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="684">
+              <caret line="38" lean-forward="true" selection-end-line="38" />
               <folding>
-                <marker date="1551868851090" expanded="true" signature="443:771" ph="..." />
+                <marker date="1551868985208" expanded="true" signature="441:767" ph="..." />
               </folding>
             </state>
           </provider>
@@ -351,7 +352,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286026" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995633" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -549,7 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../problem/21_미로탈출.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="119">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <marker date="1551867516968" expanded="true" signature="271:273" ph="..." />
@@ -559,10 +560,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../problem/24_구슬굴리기.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="684">
+          <caret line="38" lean-forward="true" selection-end-line="38" />
           <folding>
-            <marker date="1551868851090" expanded="true" signature="443:771" ph="..." />
+            <marker date="1551868985208" expanded="true" signature="441:767" ph="..." />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,7 @@ sys.stdin = open("구슬굴리기.txt")
 
 R, C = map(int, input().split())
 # 1로 맵 둘러싸기
-arr = [[1 for i in range(R+2)] for _ in range(R+2)]
+arr = [[1 for i in range(C+2)] for _ in range(R+2)]
 for i in range(1, R+1):
     arr[i] = [1] + list(map(int, input())) + [1]
 # print(arr)
@@ -20,7 +20,7 @@ def marble(x, y):
     # 전체 칸 수
     distance = 1
 
-    while True:
+    while dno < N:
         x += dx[dir[dno]]
         y += dy[dir[dno]]
 
@@ -32,9 +32,7 @@ def marble(x, y):
             x = x-dx[dir[dno]]
             y = y-dy[dir[dno]]
             dno += 1
-            if dno > N-1:
-                break
-
+            continue
     return distance
 
 for i in range(1, N+1):
