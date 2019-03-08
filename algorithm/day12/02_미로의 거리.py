@@ -43,7 +43,7 @@ for tc in range(T):
     # 미로를 중첩 리스트로 저장
     maze = [list(map(int, input())) for _ in range(N)]
     # print(maze)
-    visited = [[0 for _ in range(N)]for _ in range(N)]
+    visited = [[0 for _ in range(N)] for _ in range(N)]
 
     # 시작할 장소의 x, y 좌표
     start_x, start_y = find_start(maze)
