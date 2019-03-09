@@ -16,6 +16,7 @@ for i in range(X):
 for i in range(X):
     for j in range(Y):
         print(data[i][j], end=" ")
+    print()
 
 # 좋은풀이
 

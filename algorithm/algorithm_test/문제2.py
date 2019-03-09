@@ -9,8 +9,8 @@ for i in range(1, N):
     sea[i] = [0] + list(map(int, input().split())) + [0]
 
 
-dx = [1, -1, 0, 0]
-dy = [0, 0, 1, -1]
+# dx = [1, -1, 0, 0]
+# dy = [0, 0, 1, -1]
 
 # 섬인지 아닌지 판단하여 섬의 개수를 구하는 것
 # def isisland(x, y):

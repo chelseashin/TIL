@@ -15,15 +15,15 @@ def root_num(data):
         if total < 10:
             return total
             num = total
-    '''
-    while True:
-     tot = 0
-     while num:
-        tot += num % 10
-        num /= 10
-        if tot<10:return total
-            num = tot
-    '''
+    # '''
+    # while True:
+    #  tot = 0
+    #  while num:
+    #     tot += num % 10
+    #     num /= 10
+    #     if tot<10:return total
+    #         num = tot
+    # '''
 
 rmax = 0   # 숫자근 최댓값
 sol = 0
