@@ -25,7 +25,7 @@ def Bingo():
             count += 1
         if csum == 0:
             count += 1
-        acsum += bingo[i][i]
+        acsum += bingo[i][i]     # 대각선
         bcsum += bingo[i][5-1-i]
     if acsum == 0:
         count += 1
@@ -42,7 +42,7 @@ flag = 0
 for i in range(5):
     for j in range(5):
         find(call[i][j])  # 해당 숫자 찾아 지우기
-        if Bingo() == True:
+        if Bingo() == True:    # 빙고이면
             flag = 1
             break
     if flag == 1:

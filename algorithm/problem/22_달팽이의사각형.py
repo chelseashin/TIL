@@ -1,4 +1,4 @@
-N = 10
+N = 5
 # N = int(input())
 
 r, c = 0, -1  # 한칸 이전 위치에서 시작
@@ -13,18 +13,21 @@ while num < N*N:
         num += 1
         arr[r][c] = num
     cnt -= 1
-
+    
+    # 아래쪽
     for i in range(cnt):
         r += 1
         num += 1
         arr[r][c] = num
-
+    
+    # 왼쪽
     for i in range(cnt):
         c -= 1
         num += 1
         arr[r][c] = num
     cnt -= 1
-
+    
+    # 위쪽
     for i in range(cnt):
         r -= 1
         num += 1
