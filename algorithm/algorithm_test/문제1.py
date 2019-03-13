@@ -30,4 +30,4 @@ for i in range(N-K+1):
             if ans > diff:
                 ans = diff
 
-print("#{} {}".format(T, ans))
+    print("#{} {}".format(T, ans))

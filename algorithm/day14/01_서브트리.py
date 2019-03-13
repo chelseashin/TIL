@@ -2,7 +2,7 @@
 def searchTree(node):
     global count
     if node != 0:
-        count += 1
+        count += 1                  # 방문한 노드 개수
         searchTree(tree[node][0])
         searchTree(tree[node][1])
     return count
@@ -17,12 +17,12 @@ for tc in range(T):
     tree = [[0 for _ in range(3)] for _ in range(E+2)]
     count = 0
 
-    for i in range(E):
+    for i in range(E):       # E개의 간선을 처리
         n1 = temp[i * 2]     # 왼쪽 노드
         n2 = temp[i * 2 + 1] # 오른쪽 노드
         if not tree[n1][0]:  # 값이 비어있으면 왼쪽값을 넣는다
             tree[n1][0] = n2
-        else:  # 왼쪽값이 채워져 있으면 오른쪽 값을 넣는다
+        else:                # 이미 자식이 한 개 있는 경우
             tree[n1][1] = n2
         tree[n2][2] = n1  # 부모값 채우기
 
