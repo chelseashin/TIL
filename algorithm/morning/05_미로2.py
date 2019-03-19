@@ -5,7 +5,7 @@ def maze_bfs(x, y):
     global maze, N, flag
     Q = []
     visit[x][y] = 1
-    Q.append((x, y))    # 갈 수 있는 곳을 큐에 넣기
+    Q.append((x, y))    # 갈 수 있는 곳을 큐에 넣기, 넣고 시작하기
 
     while len(Q) != 0:    # 큐가 비어있지 않은 동안
         x, y = Q.pop(0)
