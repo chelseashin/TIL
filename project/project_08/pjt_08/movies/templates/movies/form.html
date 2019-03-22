@@ -1,0 +1,32 @@
+{% extends 'movies/base.html' %}
+{% block title %}
+{% if request.resolver_match.url_name == 'create' %}
+    NEW
+{% else %}
+    EDIT
+{% endif %}
+{% endblock %}
+
+{% block body %}
+{% load crispy_forms_tags %}
+
+{% if request.resolver_match.url_name == 'create' %}
+    <h1>New Movie</h1>
+{% else %}
+    <h1>EDIT MOVIE</h1>
+{% endif %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Submit"/>
+</form>
+
+<br>
+{% if request.resolver_match.url_name == 'create' %}
+    <a href="{% url 'movies:index' %}">BACK</a>
+{% else %}
+    <a href="{% url 'movies:detail' movie.pk %}">BACK</a>
+{% endif %}
+
+{% endblock %}
