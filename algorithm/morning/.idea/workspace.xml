@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e21726b1-0430-4310-a1ce-2c2dea2149cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../computational_thinking/은행업무.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../computational_thinking/은행업무.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../computational_thinking/이진수2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../computational_thinking/이진수2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07_숫자배열회전.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/숫자배열회전.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2019_fresh_CEIM.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2019_fresh_DS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_미로2.py" beforeDir="false" afterPath="$PROJECT_DIR$/05_미로2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../computational_thinking/0319신채원.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,54 +15,111 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="3" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="1" />
-          <entry key="py" value="70" />
-          <entry key="txt" value="37" />
-          <entry key="연습문제2" value="1" />
+          <entry key="py" value="91" />
+          <entry key="txt" value="40" />
+          <entry key="연습문제2" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="1" />
-          <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="71" />
+          <entry key="PLAIN_TEXT" value="40" />
+          <entry key="Python" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="py" value="16247" />
-          <entry key="txt" value="84" />
+          <entry key="py" value="21076" />
+          <entry key="txt" value="101" />
           <entry key="연습문제2" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="86" />
-          <entry key="Python" value="16279" />
+          <entry key="PLAIN_TEXT" value="103" />
+          <entry key="Python" value="21108" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/26_파스칼의삼각형.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.7012253">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../computational_thinking/최적경로.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../computational_thinking/최적경로.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../computational_thinking/순열2.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../computational_thinking/연습2_순열.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="589">
+                  <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+                  <folding>
+                    <marker date="1553490638903" expanded="true" signature="40:45" ph="..." />
+                    <marker date="1553490638903" expanded="true" signature="385:390" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../computational_thinking/부분집합.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="247">
+                  <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+                  <folding>
+                    <marker date="1553494269978" expanded="true" signature="122:127" ph="..." />
+                    <marker date="1553494269978" expanded="true" signature="390:395" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../computational_thinking/순열.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,16 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../problem/25_자리배정.py" />
-        <option value="$PROJECT_DIR$/../problem/21_미로탈출.py" />
-        <option value="$PROJECT_DIR$/../problem/24_구슬굴리기.py" />
-        <option value="$PROJECT_DIR$/05_미로2.py" />
-        <option value="$PROJECT_DIR$/06_농작물수확하기.txt" />
-        <option value="$PROJECT_DIR$/농작물수확하기.txt" />
-        <option value="$PROJECT_DIR$/06_농작물수확하기.py" />
-        <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/14.txt" />
-        <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/14_파리퇴치.py" />
-        <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/13_어디에단어.py" />
         <option value="$PROJECT_DIR$/15_숫자정렬.py" />
         <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/15.txt" />
         <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/15_숫자정렬.py" />
@@ -138,12 +176,22 @@
         <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/25.txt" />
         <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/27.txt" />
         <option value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/27_거스름돈.py" />
+        <option value="$PROJECT_DIR$/09_단조증가하는함수.py" />
+        <option value="$PROJECT_DIR$/단조증가하는수.txt" />
+        <option value="$PROJECT_DIR$/../computational_thinking/순열2.py" />
+        <option value="$PROJECT_DIR$/../computational_thinking/연습2_순열.py" />
+        <option value="$PROJECT_DIR$/../computational_thinking/연습문제3_부분집합.py" />
+        <option value="$PROJECT_DIR$/../computational_thinking/부분집합.py" />
+        <option value="$PROJECT_DIR$/../computational_thinking/부분집합_가지치기.py" />
+        <option value="$PROJECT_DIR$/09_단조증가하는수.py" />
+        <option value="$PROJECT_DIR$/../computational_thinking/최적경로.py" />
+        <option value="$PROJECT_DIR$/../computational_thinking/최적경로.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="847" />
-    <option name="width" value="1080" />
+    <option name="x" value="829" />
+    <option name="width" value="1098" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -169,8 +217,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.27_거스름돈">
-    <configuration name="03_간단한압축풀기" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.최적경로">
+    <configuration name="부분집합" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="morning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -178,11 +226,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../computational_thinking" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/03_간단한압축풀기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../computational_thinking/부분집합.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +239,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="20_합" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="순열2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="morning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,11 +247,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../computational_thinking" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/20_합.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../computational_thinking/순열2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,7 +260,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="23_스도쿠" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="연습문제2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="morning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +268,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../computational_thinking" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/23_스도쿠.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../computational_thinking/연습문제2" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,7 +281,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="25_쥬스나누기" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="최적경로" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="morning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,11 +289,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../computational_thinking" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/25_쥬스나누기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../computational_thinking/최적경로.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +302,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="27_거스름돈" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="부분집합_가지치기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="morning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,11 +310,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../computational_thinking" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/27_거스름돈.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../computational_thinking/부분집합_가지치기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,19 +324,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.23_스도쿠" />
-      <item itemvalue="Python.03_간단한압축풀기" />
-      <item itemvalue="Python.25_쥬스나누기" />
-      <item itemvalue="Python.20_합" />
-      <item itemvalue="Python.27_거스름돈" />
+      <item itemvalue="Python.부분집합" />
+      <item itemvalue="Python.순열2" />
+      <item itemvalue="Python.최적경로" />
+      <item itemvalue="Python.부분집합_가지치기" />
+      <item itemvalue="Python.연습문제2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.27_거스름돈" />
-        <item itemvalue="Python.20_합" />
-        <item itemvalue="Python.25_쥬스나누기" />
-        <item itemvalue="Python.23_스도쿠" />
-        <item itemvalue="Python.03_간단한압축풀기" />
+        <item itemvalue="Python.최적경로" />
+        <item itemvalue="Python.연습문제2" />
+        <item itemvalue="Python.부분집합_가지치기" />
+        <item itemvalue="Python.부분집합" />
+        <item itemvalue="Python.순열2" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +354,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="847" y="0" width="1080" height="1047" extended-state="0" />
+    <frame x="829" y="0" width="1098" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -314,7 +362,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4290393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34388646" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39082968" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,128 +391,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/농작물수확하기.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27094">
-          <caret line="1426" column="41" lean-forward="true" selection-start-line="1426" selection-start-column="41" selection-end-line="1426" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../computational_thinking/중복조합.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../computational_thinking/ex.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../computational_thinking/표준입출력방법.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05_미로2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../computational_thinking/연습문제2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../computational_thinking/연습문제3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../problem/22_달팽이의사각형.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/19.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/19_돌던지기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/17.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/16.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/18.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2660">
-          <caret line="140" column="3" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/01_최빈수구하기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/18_RC카.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/V3Z9D1.tmp/연습2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/숫자배열회전.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/이진수.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/이진수.txt" />
     <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/17_달팽이숫자.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -472,23 +399,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06_농작물수확하기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <marker date="1552865962265" expanded="true" signature="43:45" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/이진수.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/이진수.py" />
     <entry file="file://$PROJECT_DIR$/../day11/연습1_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -507,10 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <marker date="1552878703152" expanded="true" signature="442:449" ph="..." />
-            <marker date="1552878703152" expanded="true" signature="671:676" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,22 +526,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
           <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <marker date="1552987292307" expanded="true" signature="1131:1132" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/26_파스칼의삼각형.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/26.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/26_파스칼의삼각형.ipynb" />
+    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/26.txt" />
     <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/25.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -660,9 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1552989092217" expanded="true" signature="55:238" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,7 +590,165 @@
     <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_algorithm/problems/D2/26_파스칼의삼각형.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08_어디에단어.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/단조증가하는수.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/중복조합.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../MyStudy/python_basic/test_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <marker date="1552606668556" expanded="true" signature="371:376" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/연습문제3_부분집합.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <marker date="1553494123211" expanded="true" signature="376:377" ph="..." />
+            <marker date="1553494123211" expanded="true" signature="376:381" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../day01/순열.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/순열2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../day01/day01_babygin_greedy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/연습문제2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/연습2_순열.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <marker date="1553490638903" expanded="true" signature="40:45" ph="..." />
+            <marker date="1553490638903" expanded="true" signature="385:390" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_농작물수확하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <marker date="1552865962265" expanded="true" signature="43:45" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_단조증가하는수.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <marker date="1553500279828" expanded="true" signature="57:58" ph="..." />
+            <marker date="1553500279828" expanded="true" signature="57:235" ph="..." />
+            <marker date="1553500279828" expanded="true" signature="702:864" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/중복순열.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/부분집합_가지치기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <marker date="1553500180624" expanded="true" signature="110:115" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:368" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:370" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:373" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:375" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:376" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:377" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:380" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:383" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:384" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:385" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:388" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:393" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:395" ph="..." />
+            <marker date="1553500180624" expanded="true" signature="366:396" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/부분집합.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <marker date="1553494269978" expanded="true" signature="122:127" ph="..." />
+            <marker date="1553494269978" expanded="true" signature="390:395" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/순열.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/최적경로.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../computational_thinking/최적경로.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
         </state>
       </provider>
     </entry>
