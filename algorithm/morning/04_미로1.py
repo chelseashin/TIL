@@ -3,8 +3,6 @@ sys.stdin = open("미로1.txt")
 
 def isWall(x, y):
     global N, maze
-    # if x < 0 or x >= N : return True
-    # if y < 0 or y >= N : return True
     if arr[x][y] == 1: return True    # 벽이면
     if arr[x][y] == 9: return True
     return False    # 벽이 아님
@@ -29,7 +27,6 @@ N = 16
 for tc in range(T):
     n = int(input())
     arr = [list(map(int, input())) for _ in range(N)]
-    # arr = [[int(x) for x in input()] for _ in range(N)]
     # print(arr)
     flag = 0
     for i in range(N):
