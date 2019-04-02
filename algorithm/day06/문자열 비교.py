@@ -15,6 +15,24 @@ sys.stdin = open("문자열 비교.txt")
 #
 #     print(f"#{tc + 1} {ans}")
 
+# 나의 풀이 2
+T = int(input())
+for tc in range(T):
+    S1 = input()
+    S2 = input()
+    N, M = len(S1), len(S2)
+
+    ans = 0
+    for i in range(M-N+1):
+        cnt = 0
+        for j in range(N):
+            if S1[j] == S2[i+j]:
+                cnt += 1
+        if cnt == N:
+            ans = 1
+
+    print("#{} {}".format(tc+1, ans))
+
 # 두번째 풀이
 # def BruteForce(str1, str2):
 #     i = 0  # str1의 인덱스
@@ -40,15 +58,15 @@ sys.stdin = open("문자열 비교.txt")
 
 
 # 세번째 풀이
-def my_str(str1, str2):
-    for i in range(len(str2)):
-        if str2[i:i+len(str1)] == str1:
-            return 1
-    return 0
-
-T = int(input())
-for tc in range(T):
-    str1 = input()     # 찾을 패턴
-    str2 = input()     # 전체 텍스트
-
-    print(f"#{tc + 1} {my_str(str1, str2)}")
+# def my_str(str1, str2):
+#     for i in range(len(str2)):
+#         if str2[i:i+len(str1)] == str1:
+#             return 1
+#     return 0
+#
+# T = int(input())
+# for tc in range(T):
+#     str1 = input()     # 찾을 패턴
+#     str2 = input()     # 전체 텍스트
+#
+#     print(f"#{tc + 1} {my_str(str1, str2)}")

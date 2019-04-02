@@ -16,7 +16,6 @@ T = int(input())
 for tc in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    #
 
     max_mul = -1    # 가장 큰 곱
     for i in range(N):

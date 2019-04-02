@@ -21,28 +21,19 @@ sys.stdin = open("글자수.txt")
 #     print(f"#{tc + 1} {how_many(str1, str2)}")
 #
 
+
 # 다른 풀이
-def max_str(str1, str2):
-    set(str1) & set(str1)
-    ans = 0
-    for i in range()
-    return ''.join(ans)
-T = int(input())
-for tc in range(T):
-    str1 = input()  # 찾을 패턴
-    str2 = input()  # 전체 텍스트
-    # print(str1, str2)
-
-    print(f"#{tc + 1} {max_str(str1, str2)}")
-
-# 좋은 풀이
 
 T = int(input())
 for tc in range(T):
-    str1 = input()  # 찾을 패턴
-    str2 = input()  # 전체 텍스트
-    count = dict.fromkeys(str1, 0) # 딕셔너리 생성
-    # count = {}.fromkeys(str1, 0)  # 딕셔너리 생성
+    S1 = input()
+    S2 = input()
+    N, M = len(S1), len(S2)
 
-    for ch in str2:
-        if ch in count:
+    L = [0] * N
+
+    for i in range(M):
+        if S2[i] in S1:
+            L[S1.index(S2[i])] += 1
+    print("#{} {}".format(tc+1, max(L)))
+

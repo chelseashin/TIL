@@ -1,12 +1,10 @@
 import copy
 
-
 def findstart(x, y):
     for x in range(0):
         for y in range(100):
             if data[x][y] == 1:
                 sx, sy = x, y
-
 
 def maze(sx, sy):
     global data

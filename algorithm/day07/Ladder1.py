@@ -37,25 +37,75 @@ for tc in range(T):
             ice -= 1
 
     result = ice
-<<<<<<< HEAD
-    print(f"#{tc+1} {result}")
-=======
-    print(f"#{tc+1} {result}")
+
+    print("#{} {}".format(tc+1, result))
+
+
+# 다른 풀이
+
+# for n in range(1, T + 1):
+#     N = int(input())
+#     L = []
+#     for i in range(100):
+#         no = list(map(int, input().split()))
+#         L += [no]
+#
+#     for i in range(100):
+#         if L[99][i] == 2:
+#             start = i
+#             break
+#     up = 98
+#     while up != 0:
+#         if start < 99 and L[up][start + 1] == 1:
+#             while start != 99:
+#                 start += 1
+#                 if L[up][start] == 0:
+#                     start += -1
+#                     break
+#         elif start > 0 and L[up][start - 1] == 1:
+#             while start != 0:
+#                 start += -1
+#                 if L[up][start] == 0:
+#                     start += 1
+#                     break
+#
+#         up += -1
+#
+#     print(f"#{n} {start}")
+
+
+# 다른 풀이
+
+# deg = [-1, 1]
+# for test_case in range(10):
+#     tc = int(input())
+#     ladder = []
+#     for i in range(100):
+#         ladder.append(list(map(int, input().split())))
+#     cnt = 0
+#     col = 0
+#     for i in ladder[-1]:
+#         if i == 2:
+#             col = cnt
+#             break
+#         cnt += 1
+#
+#     for row in range(1, 101):
+#         check = 0
+#         for plus_col in deg:
+#             # print(col + plus_col, ladder[-row][col + plus_col])
+#             if col + plus_col >= 0 and col + plus_col < 100 and ladder[-row][col + plus_col]:
+#                 check = plus_col
+#                 col += check
+#                 break
+#         # print(row, check)
+#         if check:
+#             while True:
+#                 if col < 0 or col >= 100 or not ladder[-row][col]:
+#                     break
+#                 col += check
+#             col -= check
+#     print("#{} {}".format(tc, col))
 
 
 
-
-
-
-    # for i in range(len(data)):
-    #     for j in range(len(data)):
-    #         while i-1 < 100 and j-1 < 100:
-    #             if data[i][j] == 2:
-    #                 data[i][j+1] += 1
-    #                 if data[i+1][j] == 1:
-    #                     data[i+1][j] += 1
-    #                 elif data[i-1][j] == 1:
-    #                     data[i-1][j] += 1
-    #
-    # if data[0][j] == 2:
->>>>>>> 2de0e94efbc2d8018050fb7ce33370c88542c10c
