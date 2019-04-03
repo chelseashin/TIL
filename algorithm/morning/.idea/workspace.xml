@@ -22,7 +22,7 @@
     <session id="-109999808">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.opened" value="6" />
@@ -66,7 +66,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/12_기지국.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
+                <state relative-caret-position="281">
                   <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
                   <folding>
                     <marker date="1554202283447" expanded="true" signature="388:1962" ph="..." />
@@ -334,7 +334,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40283844" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39082968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39082968" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -721,7 +721,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/12_기지국.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="281">
           <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
           <folding>
             <marker date="1554202283447" expanded="true" signature="388:1962" ph="..." />

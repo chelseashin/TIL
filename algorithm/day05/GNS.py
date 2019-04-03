@@ -6,8 +6,6 @@ order = ["ZRO", "ONE", "TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
 for tc in range(T):
     temp = input()    # dummy
     data = list(map(str, input().split()))
-    # print(temp)
-    # print(len(data))
     # print(data)
 
     count = [0] * (len(order))
@@ -21,8 +19,5 @@ for tc in range(T):
     for i in range(10):
         ans += [order[i]] * count[i]
 
-    print(f"#{tc+1} {' '.join(ans)}")
-
-# def countingSort(data, order):
-# result = countingSort(data, order)
-    # print(result)
+    print("#{}".format(tc+1))
+    print(' '.join(ans))

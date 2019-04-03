@@ -1,7 +1,7 @@
 import sys
 sys.stdin =open("(1221)GNS_input.txt", "r")
-T = int(input())
 
+T = int(input())
 digit = ["ZRO", "ONE","TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
 for tc in range(T):
     temp = input()  #dummy
