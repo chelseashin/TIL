@@ -38,4 +38,4 @@ for tc in range(T):
     data = [[0 for _ in range(SIZE)]for _ in range(SIZE)]
     for i in range(SIZE):
         data[i] = list(map(int, input().split()))
-    print(f"#{no} {solve(data)}")
+    print("#{} {}".format(tc + 1, solve(data)))

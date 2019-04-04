@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open("회문.txt")
 
-
 def my_rpalindrome(data):
     global flag, M, N
     count = 0
@@ -36,7 +35,7 @@ for tc in range(T):
     M = 8
     N = int(input())
     # data = [list(map(str,input())) for _ in range(8)]
-    data = [input() for _ in range(8)]
+    data = [input() for _ in range(M)]
     # print(data)
     count = 0
 
