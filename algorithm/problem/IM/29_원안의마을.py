@@ -1,10 +1,6 @@
 import sys
 sys.stdin = open("원안의마을.txt")
 
-import math
-N = int(input())
-land = [list(map(int, input())) for _ in range(N)]
-
 def bangyeong(x, y):   # 최대 반경
     dis = 0    # 기지국까지의 거리
     max_dis = 0    # 최대거리
@@ -15,6 +11,11 @@ def bangyeong(x, y):   # 최대 반경
             if max_dis < dis:
                 max_dis = dis
     return max_dis
+
+# main
+import math
+N = int(input())
+land = [list(map(int, input())) for _ in range(N)]
 
 for i in range(N):
     for j in range(N):

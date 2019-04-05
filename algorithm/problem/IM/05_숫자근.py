@@ -1,10 +1,13 @@
 import sys
+
 sys.stdin = open("숫자근.txt")
 
 n = int(input())
 num = []
 for i in range(n):
     num.append(int(input()))
+
+
 # print(num)
 
 # 숫자근 만들어주는 함수
@@ -25,7 +28,8 @@ def root_num(data):
     #         num = tot
     # '''
 
-rmax = 0   # 숫자근 최댓값
+
+rmax = 0  # 숫자근 최댓값
 sol = 0
 for i in range(n):
     root = root_num(num[i])  # 숫자근 만들어주는 함수

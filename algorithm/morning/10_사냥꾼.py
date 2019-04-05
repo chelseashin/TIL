@@ -49,7 +49,7 @@ for tc in range(T):
 #
 #         while True:
 #             if nx < 0 or nx >= N: break
-#             if nx < 0 or ny >= N: break
+#             if ny < 0 or ny >= N: break
 #             if jido[nx][ny] == 1: break
 #             if jido[nx][ny] == 3: break
 #             if jido[nx][ny] == 0:

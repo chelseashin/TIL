@@ -11,10 +11,9 @@ def printArr():
 T = int(input())
 for tc in range(1, T + 1):
     N = int(input())
-    AnswerN = 0
-
     map = [list(input()) for _ in range(N)]
     printArr()
+
     for i in range(N):
         for j in range(N):
             if map[i][j] != 'X' and map[i][j] != 'H': #기지국일 경우
@@ -28,9 +27,11 @@ for tc in range(1, T + 1):
                     if j - k > -1 and map[i][j - k] == 'H': #서
                         map[i][j - k] = 'X'
     printArr()
+
+    AnswerN = 0
     for i in range(N):
         for j in range(N):
             if map[i][j] == 'H':
                 AnswerN += 1
 
-print("#{0} {1}".format(tc, AnswerN))
+print("#{} {}".format(tc, AnswerN))
