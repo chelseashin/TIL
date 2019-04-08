@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('15.txt')
+sys.stdin = open('14.txt')
 
 def mal_bfs(x, y):
     dx = [1, 2, 2, 1, -1, -2, -2, -1]
