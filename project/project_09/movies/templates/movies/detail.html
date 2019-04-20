@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block body %}
+<h1>★ Movie Information ★</h1>
+<hr>
+<h2>{{ movie.title }}</h2>
+<img src="{{ movie.poster_url }}" alt="{{ movie.title }} 이미지">
+<hr>
+<p>관람인원 : {{ movie.audience }}명</p>
+<p>장르 : {{ movie.genre }}</p>
+<p>줄거리 : {{ movie.description }}</p>
+<hr>
+<span class="badge badge-info mb-3">평점등록</span>
+{% if user.is_authenticated %}
+    <form action="{% url 'movies:score_create' movie.pk %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" value="등록">
+    </form>
+{% else %}
+    <p>평점을 등록하려면 <a href="{% url 'accounts:login' %}">로그인</a>해주세요!</p>
+{% endif %}
+
+<hr>
+
+<span class="badge badge-info mb-3">평점보기</span>
+{% for score in movie.score_set.all %}
+    <b>{{ score.user.username }}</b>
+    <p><b>{{ score.value }}점</b> | {{ score.content }}</p>
+    {% if score.user == request.user %}
+        <form action="{% 'movies:score_delete' movie.pk score.pk" method="POST" style="display: inline;" on_click="return confirm('R U SURE?')">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-danger" value="삭제">
+        </form>
+    {% endif %}
+{% empty %}
+    <p>아직 작성된 댓글이 없습니다.</p>
+{% endfor %}
+
+<hr>
+<a href="{% url 'movies:list' %}" class="btn btn-secondary">BACK</a>
+{% endblock %}
+
+
+
+
+    score_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='score_movies', through='Score')
+    

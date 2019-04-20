@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>★ User Information ★</h2>
+
+<p>{{ movie_user.pk }}번째 사용자</p>
+
+<!-- Card -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{ movie_user.username }}</h1>
+    <p class="lead">이메일 : {{ movie_user.email }}</p>
+    <p class="lead">팔로잉 : {{ movie_user.followings.all.count }} / 팔로워 : {{ movie_user.followers.all.count }}</p>
+
+    
+    {% if user != movie_user %}
+        {% if user in movie_user.followers.all %}
+            <a href="{% url 'accounts:follow' movie_user.pk %}" class="btn btn-outline-primary">unfollow</a>
+        {% else %}
+            <a href="{% url 'accounts:follow' movie_user.pk %}" class="btn btn-primary">follow</a>
+        {% endif %}
+    {% endif %}
+    <hr>
+  </div>
+</div>
+<h4 class="text-center">{{ movie_user.username }}님이 작성한 평점 목록</h4>
+    {% for score in movie_user.score_set.all %}
+        <ul>
+            <li><p>영화제목 : {{ score.movie.title }}</p></li>
+            <li><p>평점 : {{ score.value }}점</p></li>
+        </ul>
+    {% empty %}
+        <p>아직 작성한 평점이 없습니다.</p>
+    {% endfor %}
+<hr>
+<h6 class="text-center"><b>내가 팔로우 한 사람이 작성한 평점 중 점수가 가장 높은 영화</b></h6>
+{% if user == movie_user %}
+    {% for follow in movie_user.followings.all %}
+        <p><b>{{ follow.username }}</b>의 최고 평점</p>
+        <p>영화제목 : {{ follow.score_set.first.movie.title }}</p>
+        <p>평점 : {{ follow.score_set.first.value }}점</p>
+        <hr>
+    {% empty %}
+        <p>아직 정보가 없습니다</p>
+    {% endfor %}
+{% else %}
+    <p>정보를 볼 수 없습니다.</p>
+{% endif %}
+<hr>
+<a href="{% url 'movies:list' %}" class="btn btn-warning"><b>영화 리스트 보러가기</b></a>
+{% endblock %}
