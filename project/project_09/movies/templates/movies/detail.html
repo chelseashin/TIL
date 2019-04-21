@@ -15,20 +15,18 @@
     <form action="{% url 'movies:score_create' movie.pk %}" method="POST">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <input type="submit" value="등록">
+        <input type="submit" value="등록" class="btn btn-secondary">
     </form>
 {% else %}
     <p>평점을 등록하려면 <a href="{% url 'accounts:login' %}">로그인</a>해주세요!</p>
 {% endif %}
-
 <hr>
 
 <span class="badge badge-info mb-3">평점보기</span>
 {% for score in movie.score_set.all %}
-    <b>{{ score.user.username }}</b>
-    <p><b>{{ score.value }}점</b> | {{ score.content }}</p>
+    <p><b>{{ score.user.username }}</b> | 별 {{ score.value }}개 | {{ score.content }}</p>
     {% if score.user == request.user %}
-        <form action="{% 'movies:score_delete' movie.pk score.pk" method="POST" style="display: inline;" on_click="return confirm('R U SURE?')">
+        <form action="{% url 'movies:score_delete' movie.pk score.pk %}" method="POST" style="display: inline;" on_click="return confirm('R U SURE?')">
             {% csrf_token %}
             <input type="submit" class="btn btn-danger" value="삭제">
         </form>

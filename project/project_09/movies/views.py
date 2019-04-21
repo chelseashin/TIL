@@ -25,15 +25,13 @@ def detail(request, movie_pk):
 @login_required
 def score_create(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
-    form = ScoreForm(require_POST)
+    form = ScoreForm(request.POST)
     if form.is_valid():
         score = form.save(commit=False)
         score.user = request.user
-        score_movie_id = movie_pk
+        score.movie_id = movie_pk
         score.save()
     return redirect('movies:detail', movie_pk)
-    # else:
-    #     return redirect('movies:detail', movie_pk)
 
 @require_POST
 @login_required        
