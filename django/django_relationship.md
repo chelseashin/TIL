@@ -147,6 +147,7 @@ post1.comment_set.all()[0].user.name
 
 # 1번 글의 2번째부터 4번째까지의 댓글을 가져오세요.
 post1.comment_set.all()[1:4]
+# 실제로 SQL에서 OFFSET LIMIT옵션이다. LIMIT 3 OFFSET 1
 
 # 1번 글의 2번째 댓글을 작성한 사람의 첫번째 게시글의 작성자의 이름은?
 post1.comment_set.all()[1].user.post_set.first().user.name
@@ -172,7 +173,7 @@ Comment.objects.filter(post__title__contains='1')
 
 
 
-* 다대다(N:M) 관계
+* M:N 관계
 
 * models.py
 
@@ -208,21 +209,15 @@ class Patient(models.Model):
 ```python
 $ python manage.py shell_plus
 
-In [2]: doctor = Doctor.objects.create(name='kim')                                                                                                                                               
-
-In [3]: patient = Patient.objects.create(name='john)                                                                                                                                             
-  File "<ipython-input-3-63995ff5f14c>", line 1
-    patient = Patient.objects.create(name='john)
-                                                ^
-SyntaxError: EOL while scanning string literal
+In [2]: doctor = Doctor.objects.create(name='kim')                               
 
 
-In [4]: patient = Patient.objects.create(name='john')                                                                                                                                            
+In [4]: patient = Patient.objects.create(name='john')                                                                                           
 
 In [5]: Reservation.objects.create(doctor=doctor, patient=patient)                                                                                                                               
 Out[5]: <Reservation: Reservation object (1)>
 
-In [6]:                                                                                                                           In [6]:                                                     In In [6]: doctor.reservation_set.all()   # 의사가 가지고 있는 모든 예약 가져오기                                                                                                                   
+In [6]: doctor.reservation_set.all()   # 의사가 가지고 있는 모든 예약 가져오기                                                                                                                   
 Out[6]: <QuerySet [<Reservation: Reservation object (1)>]>
 
 In [7]: patient.reservation_set.all()                                                                                                                                                            
