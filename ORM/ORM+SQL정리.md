@@ -171,53 +171,50 @@ sqlite> CREATE TABLE classmates(
 
 
 
-    * 테이블 설정 변경 
-    
-    ```sql
-    sqlite> DROP TABLE classmates;   -- classmate테이블 삭제
-    sqlite> CREATE TABLE classmate(
-    	id INTEGER PRIMARY KEY AUTOINCREMENT,    -- INTEGER에서만 사용 가능!
-        name TEXT NOT NULL,
-        age INTEGER NOT NULL,
-    	);
-    ```
-    
-    *   
+```sql
+* 테이블 설정 변경 
+
+sqlite> DROP TABLE classmates;   -- classmate테이블 삭제
+sqlite> CREATE TABLE classmate(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,    -- INTEGER에서만 사용 가능!
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL,
+	);
+```
 
 
 
-    2. data 가져오기(SELECT)
-    
-    * 
-    
-      ```sql	
-      sqlite> SELECT column1, column2 FROM table;
-      -- EX)
-      sqlite> SELECT id, name FROM classmates;
-      
-      -- Q. classmates에서 id, name 값을 하나만 가져온다면?
-      sqlite> SELECT id, name FROM classmates LIMIT 1;
-      
-      -- Q. classmates에서 특정 column값을 특정 위치에서부터 몇 개만 가져온다면?
-      sqlite> SELECT column1, column2 FROM table LIMIT num OFFSET num;
-      -- LIMIT과 OFFSET은 세트!
-      
-      -- Q. classmates에서 id, name column값을 세번째에 있는 값 하나만 가져온다면
-      sqlite> SELECT id, name FROM classmates LIMIT 1 OFFSET 2;
-      -- LIMIT : 몇 개 가져오는지, OFFSET : 몇 번째꺼 다음부터 가져오는지
-      
-      -- Q.classmates에서 id,name column 값 중에 특정한 값만 가져온다면?
-      sqlite> SELECT column1, column2 FROM table WHERE column=value;
-      
-      -- Q. classmates에서 id, name column값 중에 주소가 서울인 사람만 가져온다면?
-      sqlite> SELECT id, name FROM classmates WHERE address="서울";
-      
-      -- Q. classmates에서 특정 column값을 중복 없이 가져온다면?
-      sqlite> SELECT DISTINCT column FROM tables;
-      
-      -- Q. classmates에서 age 값을 중복 없이 가져온다면?
-      sqlite> SELECT DISTINCT age FROM classmates;
-      ```
+2. data 가져오기(SELECT)
+
+```sql
+
+  sqlite> SELECT column1, column2 FROM table;
+  -- EX)
+  sqlite> SELECT id, name FROM classmates;
+  
+  -- Q. classmates에서 id, name 값을 하나만 가져온다면?
+  sqlite> SELECT id, name FROM classmates LIMIT 1;
+  
+  -- Q. classmates에서 특정 column값을 특정 위치에서부터 몇 개만 가져온다면?
+  sqlite> SELECT column1, column2 FROM table LIMIT num OFFSET num;
+  -- LIMIT과 OFFSET은 세트!
+  
+  -- Q. classmates에서 id, name column값을 세번째에 있는 값 하나만 가져온다면
+  sqlite> SELECT id, name FROM classmates LIMIT 1 OFFSET 2;
+  -- LIMIT : 몇 개 가져오는지, OFFSET : 몇 번째꺼 다음부터 가져오는지
+  
+  -- Q.classmates에서 id,name column 값 중에 특정한 값만 가져온다면?
+  sqlite> SELECT column1, column2 FROM table WHERE column=value;
+  
+  -- Q. classmates에서 id, name column값 중에 주소가 서울인 사람만 가져온다면?
+  sqlite> SELECT id, name FROM classmates WHERE address="서울";
+  
+  -- Q. classmates에서 특정 column값을 중복 없이 가져온다면?
+  sqlite> SELECT DISTINCT column FROM tables;
+  
+  -- Q. classmates에서 age 값을 중복 없이 가져온다면?
+  sqlite> SELECT DISTINCT age FROM classmates;
+```
 
 
 3. data 삭제 (DELETE)
@@ -302,14 +299,14 @@ sqlite> SELECT first_name, MAX(balance) FROM users;
 * ORDER(정렬)
 
    ```
-   ```sql
+   ​```sql
   SELECT columns FROM table ORDER BY column1, column2 ASC | DESC;
   -- ASC : 오름차순, DESC : 내림차순
   
   sqlite> SELECT * FROM users ORDER BY age ASC LIMIT 10;
   sqlite> SELECT * FROM users ORDER BY age, last_name ASC LIMIT 10;
   sqlite> SELECT name FROM users ORDER BY balance DESC LIMIT 10;
-   ```
+  ```
 
 
 
