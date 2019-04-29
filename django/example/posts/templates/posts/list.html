@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ request.user }}
+<h1>LIST</h1>
+<a href="{% url 'posts:create' %}">create</a>
+<hr>
+{% for post in posts %}
+<b>{{ post.user }}</b> | {{ post.title }} | {{ post.content }}
+<br>
+{% if request.user == post.user %}
+<a href="{% url 'posts:edit' post.pk %}">Edit</a>
+<form method='post' action="{% url 'posts:delete' post.pk %}" style='display:inline;'>
+    {% csrf_token %}
+    <input type="submit" value="Submit"/>
+</form>
+{% endif %}
+<a href="{% url 'posts:like_post' post.pk %}"> like_push</a>
+{% if user in post.like_users.all %}
+    unlike
+    {% else %}
+    like
+    {% endif %}
+ | {{ post.like_users.count }}
+
+{% for liker in post.like_users.all %}
+    <p><b>좋아요를 누른 유저</b> | {{ liker }}</p>
+{% endfor %}
+<hr>
+{% endfor %}
+{% endblock %}
