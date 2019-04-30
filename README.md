@@ -9,7 +9,8 @@ project/
 SQL/
 bootstrap/  
 daily/  
-HTML/   
+HTML/
+javascript/
 problems/  
 python_slide/  
 startcamp/
