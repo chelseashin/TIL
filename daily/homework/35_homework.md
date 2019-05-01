@@ -14,14 +14,17 @@ Homework
 
    `let`과 `const`의 차이점은 변수의 `immutable`여부이다.
 
-   * `let` : 변수 재할당이 가능
-   * `const` : 변수 재할당, 재선언 모두  불가능
+   * `let` : 변수 재할당이 가능, 일반적인 변수에 해당. 추후에 값이 바뀔 것이 확실할 경우 사용
+   * `const` : 상수, 언제나 같은 값. 한번 할당되고 재할당, 재선언이 되지 않을 경우에 사용
 
 
 
-2.  JS 에서는 key – value 로 이루어진 자료구조를 Object 라고 부른다. Object 와 JSON 의 차이를 간략하게 기술하시오.
+2. JS 에서는 key – value 로 이루어진 자료구조를 Object 라고 부른다. Object 와 JSON 의 차이를 간략하게 기술하시오.
    * `Object` : JS engine 메모리 안에 있는 데이터 구조
-   * `Json` : 객체 내용을 기술하기 위한 txt파일(json파일이므로, .json 파일이 존재)
+
+   * `Json` : JS 객체 형식으로 데이터의 구조를 표기하기 위한 단순한 문자열. 객체 내용을 기술하기 위한 txt파일(json파일이므로, .json 파일이 존재)
+
+     
 
 
 
@@ -66,9 +69,9 @@ const myObject = {
         // 1.
         let header = Document.querySelector('h1')
         // 2.
-        console.log(header)
+        console.log(header.innerText)
         // 3. 
-        document.querySelector('h1').innerText = "Happy Hacking!"
+        header.innerText = 'Happy Hacking'
     </script>
 </body>
 </html> 
