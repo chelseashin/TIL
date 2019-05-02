@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="change-btn">워크샵 글 작성!</button>
+    <script>
+    	// #change-btn을 button 변수에 할당
+        const button = document.querySelector('#change-btn')
+        // h1태그를 header 상수에 할당
+        const header = document.querySelector('h1')
+        // clickCount 변수를 0으로 초기화한다
+        let clickCount = 0
+        // button에 클릭 이벤트를 추가한다
+        button.addEventListener('click', event => {
+            //clickCount가 1씩 증가
+            clickCount += 1 // ClickCount ++
+            
+            // header 안의 내용을 clickCount 숫자로 바꾼다.
+            header.innerTEXT = clickCount
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+const data = { }
+url = 'http://13.125.249.144:8080/daejeon/2/posts/'
+axios.post(url, data)

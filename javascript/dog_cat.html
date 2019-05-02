@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>댕댕이 + 고양이</h1>
+    <button id="change-btn">댕댕이 주세요</button>
+    <button id="change-btn">고양이 주세요</button>
+    <div class="animals"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+    // 함수로 담기
+    const getDogImage = function() {
+            // 요청을 보내서 가져오면, 
+        axios.get('https://dog.ceo/api/breeds/image/random')
+            // 응답은 내용(response)의 response.data.message를 반환하고
+            .then(response => response.data.message)
+            // 반환된 내용을 url로 담아서 
+            .then(url => {
+                // image tag를 만들고
+                const imgTag = document.createElement('img')
+                // url을 이미지 src로 달고
+                imgTag.src = url
+                // 원하는 위치(animals div)에 붙이자.
+                document.querySelector('.animals').prepend(imgTag)
+                // console.log('붙였다!!')
+            })
+            // .catch(error => error)로 에러처리 해준다.
+    }
+
+    const getCatImage = function () {
+        axios.get('https://api.thecatapi.com/v1/images/search')
+        .then(response => response.data[0].url)
+        .then(url => {
+            const ImgTag = document.createElement('img')
+            imagTag.src = url
+            document.querySelector('.animals'.prepend(imgTag))
+        })
+    }
+
+    // 사진이 추가되도록 버튼 만들기
+    const button = document.querySelector('#change-btn')
+    button.addEventListener('click', event => {
+        getDogImage()    // 함수 호출
+    })
+
+    const button = document.querySelector('#change-btn')
+    button.addEventListener('click', event => {
+        getCatImage()    // 함수 호출
+    })
+    
+    </script>
+</body>
+</html>
