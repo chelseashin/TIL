@@ -87,12 +87,48 @@
 
 // exercise 2.3 다음 두 배열을 객체로 결합한 comics 배열을 만들어보자. 
 // (brands 요소가 key, movies 요소가 value)
-const brands = ['Marvel', 'DC']
-const movies = ['Ironman', 'Batman']
+// const brands = ['Marvel', 'DC']
+// const movies = ['Ironman', 'Batman']
 
-// const comics = brands.map((brand, i) => ({name: x, hero: movies[i]}) 
+// // const comics = brands.map((brand, i) => ({name: x, hero: movies[i]}) 
 
-const comics = {}
-brands.map((brand, i) => comics[brand] = movies[i])
-console.log(comics)
+// const comics = {}
+// brands.map((brand, i) => comics[brand] = movies[i])
+// console.log(comics)
 
+//  3.filter
+const PRODUCTS = [
+    { name: 'cucumber', type: 'vegetable' },
+    { name: 'banana', type: 'fruit' },
+    { name: 'carrot', type: 'vegetable' },
+    { name: 'apple', type: 'fruit' },
+]
+
+const fruitProducts = PRODUCTS.filter(function (product) {
+    return product.type === 'fruit'
+    // 해당 조건문에서 true를 만족할 경우 return 
+})
+
+// 한 줄로
+// const fruitProducts = PRODUCTS.filter(product => product.type === 'fruit')
+console.log(fruitProducts)
+
+// 3-1 filter 헬퍼를 사용해서, numbers 배열 중 50보다 큰 값들만 필터링해서 filteredNumbers 에 저장하라.
+
+const numbers = [ 15, 25, 35, 45, 55, 65, 75, 85, 95 ]
+
+const filteredNumbers = numbers.filter(number => number >= 50)
+console.log(filteredNumbers)
+
+
+// 3-2 users 배열에서 admin 이 true 인 user object 들만 filteredUsers 배열에 저장하라.
+const users = [
+    {id: 1, admin: true},
+    {id: 2, admin: false},
+    {id: 3, admin: false},
+    {id: 4, admin: false},
+    {id: 5, admin: true},
+]
+
+const filteredUsers = users.filter(user => user.admin)
+console.log(filteredUsers)

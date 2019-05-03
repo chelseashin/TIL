@@ -7,34 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="change-btn">워크샵 글 작성!</button>
+    <button id="button">게시글 작성</button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-    	// #change-btn을 button 변수에 할당
-        const button = document.querySelector('#change-btn')
-        // h1태그를 header 상수에 할당
-        const header = document.querySelector('h1')
-        // clickCount 변수를 0으로 초기화한다
-        let clickCount = 0
-        // button에 클릭 이벤트를 추가한다
-        button.addEventListener('click', event => {
-            //clickCount가 1씩 증가
-            clickCount += 1 // ClickCount ++
-            
-            // header 안의 내용을 clickCount 숫자로 바꾼다.
-            header.innerTEXT = clickCount
-        })
+        const workShop = function () {
+            const data = {
+            "post" : {
+                "title": "Today is Friday",
+                "content": "hihi",
+                "author" : "chelseashin",
+            }
+        }
+        axios.post("http://13.125.249.144:8080/ssafy/daejeon/2/posts", data)
+            .then(res => console.log('글이 작성되었습니다.'))
+            .catch(error => console.log('에러가 발생했습니다.'))
+        }
+    	
+    const workShopButton = document.querySelector("#button")
+    workShopButton.addEventListener('click', workShop)
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-const data = { }
-url = 'http://13.125.249.144:8080/daejeon/2/posts/'
-axios.post(url, data)

@@ -11,24 +11,25 @@ Workshop
 ![image](https://user-images.githubusercontent.com/45935233/57063381-01d8f700-6cfe-11e9-8a1f-c10babe3da6f.png)
 
 ```javascript
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-const axios = require("axios")
-const url = "http://13.125.249.144:8080/ssafy/daejeon/2/posts"
-axios.get(url)
-    .then(res => {
-    console.log(res.data.posts)
-	})
-    const data = {
-        "post" : {
-            "title" : "Hello, DJPY2",
-            "content" : "NICE TO MEET YOU",
-            "author" : "CHELSEA" 
+<button id="button">게시글 작성</button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const workShop = function () {
+            const data = {
+            "post" : {
+                "title": "Today is Friday",
+                "content": "hihi",
+                "author" : "chelseashin",
+            }
         }
-    }
-    axios.post(url, data)
-    	.then(() => console.log('message sent'))
-</script>
+        axios.post("http://13.125.249.144:8080/ssafy/daejeon/2/posts", data)
+            .then(res => console.log('글이 작성되었습니다.'))
+            .catch(error => console.log('에러가 발생했습니다.'))
+        }
+    	
+    const workShopButton = document.querySelector("#button")
+    workShopButton.addEventListener('click', workShop)
+    </script>
 ```
 
 
