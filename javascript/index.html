@@ -16,8 +16,11 @@
 <body>
     <script>
         // alert('Welcome to JS!');  // 화면 켰을 때 경고알림 
-        document.write('<h1>Hello, World!</h1>')
-        document.querySelector('h1').innerText = 'Goodbye, World!!';
+        document.write('<h1>Hello World!</h1>')
+        document.querySelector('h1'); // <h1>Hello World</h1>
+        document.querySelector('h1').innerText; // Hello World
+
+        document.querySelector('h1').innerText = 'GoodBye world!';
 
         //ES5 에서는 var키워드를 사용했지만 우리는 사용 X
         // var name = 'chelsea';
@@ -97,13 +100,13 @@
         // const mul = (num1, num2) => num1 * num2
 
         // 익명함수 / 1회용 함수
-        function (num) {
-            return num ** 3
-        }
-        num => num ** 3   // 익명함수
+        // function (num) {
+        //     return num ** 3
+        // }
+        // num => num ** 3   // 익명함수
         
-        (num => num ** 3)(3)    // 익명함수 즉시 실행
-        const cube = num => num ** 3    // 기명함수로 만들기(변수나 상수에 할당)
+        // (num => num ** 3)(3)    // 익명함수 즉시 실행
+        // const cube = num => num ** 3    // 기명함수로 만들기(변수나 상수에 할당)
         // 사용 : cube(5)
         
 
