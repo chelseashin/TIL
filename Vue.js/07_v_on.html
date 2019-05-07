@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-model</title>
+</head>
+<body>
+    <div id="app">
+        <h1>카운터 : {{ number }}</h1>
+        <!-- v-on 사용법 : 이벤트이름="method이름" -->
+        <!-- 축약어 : v-bind: => : -->
+        <!-- 축약어 : v-on: => @ -->
+        <button @click="plus">증가</button>
+        <button @click="minus">감소</button>
+    </div>
+    <!-- v-model : input/select/textarea -->
+    <!-- form에 관련된 태그에만 사용될 수 있다. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                number: 0,
+            },
+            methods: {
+                plus: function () {
+                    this.number++
+                },
+                minus: function () {
+                    this.number--
+                }
+            }
+        })
+    </script>
+</body>
+</html>
