@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <script>
+        var coworkers = ['egoing','leezche','duru','taeho'];
+    </script>
+    <h2>Co workers</h2>
+    <h5>while loop</h5>
+    <ul>
+        <script>
+            // coworkers 배열의 길이만큼 반복 실행
+            var i = 0;
+            while(i < coworkers.length){
+                document.write('<li><a href="http://instagram.com/'+coworkers[i]+'">'+ coworkers[i]+'</a></li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+    <hr>
+    <h5>for loop</h5>
+    <ul>
+        <script>
+            for (var j = 0; j < coworkers.length; j++) {
+                document.write('<li><a href="http://instagram.com/'+ coworkers[j] +'">'+ coworkers[j] + '</li>');
+            }
+        </script>
+    </ul>
+</body>
+</html>
