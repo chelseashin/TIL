@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>반복문(while)</title>
+</head>
+<body>
+    <!-- 반복문 -->
+    <!-- while(조건) { 반복해서 실행할 코드 } -->
+    <script>
+        // 무한루프
+        // while(true) {
+        //     document.write('hello chelsea! </br>')
+        // }
+        // while문은 while문 뒤에 따라오는 괄호 안의 조건이 참(true)면 중괄호 안의 코드 구간을 반복적으로 실행한다. 조건이 false면 반복문이 실행되지 않는다. 여기서 true와 false는 종료조건이 되는데, 이 값을 변경하는 것을 통해서 반복문을 종료시킬 수 있다. 반복문에서 종료조건을 잘못 지정하면 무한반복이 되거나, 반복문이 실행되지 않는다.
+        // 적당한 시점에 false로 바뀌어야 하는 것이 중요
+        var i = 0;
+        // 종료조건으로 i의 값이 10보다 작다면 true, 같거나 크다면 false가 된다.
+        while(i < 10){  // 10보다 작은 동안 계속 실행
+            document.write(i+1 + '. hello chelsea! </br>')
+            // i의 값이 1씩 증가한다.
+            i++
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>연산자</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 동등 연산자
+		alert(1==2);	//false
+		alert(1==1);	//true
+		alert("one"=="two")     //false
+		alert("one"=="one")     //true
+
+		// 일치 연산자 - 데이터형까지 같아야 함
+		alert(1=='1');              //true
+		alert(1==='1');             //false
+
+		alert(null == undefined);   //true
+		alert(null === undefined);  //false
+		alert(true == 1);           //true
+		alert(true === 1);          //false
+		alert(true == '1');         //true
+		alert(true === '1');        //false
+		alert(0 === -0);            //true
+		alert(NaN === NaN);         //false
+
+		// != : 부정을 의미
+		alert(1!=2);            //true
+		alert(1!=1);            //false
+		alert("one"!="two");    //true
+		alert("one"!="one");    //false
+
+	</script>
+</body>
+</html>

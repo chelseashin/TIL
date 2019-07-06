@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>변수와 비교연산자</title>
+</head>
+<body>
+    <script>
+        var id = prompt('아이디를 입력해주세요.');
+        var password = prompt('비밀번호를 입력해주세요');
+        // && : 좌항과 우항이 모두 참(true)일 때 참이된다.
+        if(id=='chelsea' && password == '654321'){
+        	alert('로그인 되었습니다. ' + id + '님 반갑습니다!');
+        } else {
+            alert('아이디가 일치하지 않습니다.')
+        }
+
+        // || : '||'의 좌우항 중에 하나라도 true라면 true가 되는 논리 연산자
+        if((id==='egoing' || id==='k8805' || id==='sorialgi') && password==='111111'){
+		    alert('인증 했습니다.');
+		} else {
+		    alert('인증에 실패 했습니다.');
+}
+        // ! : not. 부정의 의미. Boolean의 값을 역전
+        // boolean의 대체제
+        // 1 : true
+        // 0 : false, null, NaN, undefined, ''(빈 문자열)
+        // 참고 url : https://dorey.github.io/JavaScript-Equality-Table/
+    </script>
+</body>
+</html>
