@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- HTML -->
+    <ol>
+        <!-- todo-item 컴포넌트의 인스턴스 만들기 -->
+        <todo-item></todo-item>
+    </ol>
+     
+    <div id="app-7">
+        <ol>
+          <todo-item
+          v-for="item in Students"
+          v-bind:todo="item"
+          v-bind:key="item.id">
+          </todo-item>
+        </ol>
+      </div>
+    
+    <!-- JS -->
+    <script>
+        Vue.component('todo-item', {
+          prop: ['todo'],
+          template: '<li>{{ todo.text }}</li>'
+        })
+
+        var app7 = new Vue({
+          el: '#app-7',
+          data: {
+            Students: [
+              { id: 0, text: 'chelsea'},
+              { id: 1, text: 'ann'},
+              { id: 2, text: 'piggy'},
+              { id: 3, text: 'hani'},
+            ]
+          }
+        })
+    </script>
+</body>
+</html>
