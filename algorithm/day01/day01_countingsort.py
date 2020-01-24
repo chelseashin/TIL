@@ -1,3 +1,7 @@
+# Counting Sort(카운팅정렬)
+# 시간복잡도 : O(n+k)
+# n은 리스트의 개수, k는 정수의 최대값
+
 def CountingSort(a, b, c):
     for i in range(len(a)):
         c[a[i]] += 1

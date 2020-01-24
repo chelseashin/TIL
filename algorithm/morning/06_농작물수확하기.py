@@ -15,7 +15,7 @@ for tc in range(T):
     sum = 0
     for i in range(N):
         for j in range(start, end+1, 1):
-                sum += farm[i][j]
+            sum += farm[i][j]
         if i < mid:
             start -= 1
             end += 1
