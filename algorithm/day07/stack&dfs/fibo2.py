@@ -10,4 +10,5 @@ def fibo(n) :
     return memo[n]
 
 memo = [0, 1]
-print(fibo(1000))
+print(fibo(10))
+print(memo)

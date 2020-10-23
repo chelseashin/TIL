@@ -1,3 +1,6 @@
+# 재귀함수
+# 하나의 함수에서 자기 자신을 다시 호출해 작업을 수행하는 알고리즘
+
 # 팩토리얼 함수
 def factorial(n):
     if n <= 1:
@@ -37,8 +40,7 @@ def fibo1(n):
 
 memo = [0, 1]
 print(fibo1(8))
-print(fibo1(20))
-print(fibo1(100))
+print(fibo1(10))
 
 
 # 피보나치 3 - DP 적용 알고리즘(DP: 점화식)
@@ -50,5 +52,4 @@ def fibo2(n):
         f.append(f[i-1] + f[i-2])
     return f[n]
 
-print(fibo2(1000))
-
+print(fibo2(10))
