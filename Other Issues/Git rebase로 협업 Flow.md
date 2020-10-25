@@ -4,7 +4,7 @@
 
 2019-08-07
 
-< git develop branch & rebase 
+< git develop branch & rebase >
 
 ```
 multicampus@DESKTOP-KVCQHCD MINGW64 ~/Desktop/project/hifive/team_HiFive/source (master)
